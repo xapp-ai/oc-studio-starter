@@ -20,8 +20,8 @@ import { QuestionAnsweringHandler } from "@xapp/question-answering-handler";
 export const handler: AWSLambda.Handler = new Assistant()
     .withUserStorage(
         new DynamoUserStorageService({
-            appId: process.env.OVAI_APP_ID,
-            tableName: "stentor-user-prod"
+            appId: process.env.OC_STUDIO_APP_ID,
+            tableName: process.env.USER_STORAGE_TABLE
         })
     )
     .withHandlers({
