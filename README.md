@@ -1,2 +1,3 @@
-# starter-template
-A starter template for Conversational AI
+## OC Studio Starter Template
+
+A starter template for OC Studio leveraging 📣 stentor conversational framework.

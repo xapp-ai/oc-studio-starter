@@ -1,0 +1,25 @@
+name: Publish
+
+on:
+  push:
+    branches: [main]
+    tags-ignore: [v*]
+
+jobs:
+  npm-publish:
+    name: npm-publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@master
+      - name: Set up Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: 10.22.0
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run test
+      - run: npm run build
+      - uses: mikeal/merge-release@master
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
