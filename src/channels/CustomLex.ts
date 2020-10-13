@@ -1,5 +1,6 @@
 /*! Copyright (c) 2020, XAPP AI */
 import { Channel, Request, isIntentRequest } from "stentor";
+import { log } from "stentor-logger";
 
 import { LexRequest } from "@xapp/stentor-lex-lib";
 import { TranslateLexConnectRequest } from "@xapp/stentor-lex-connect";
@@ -41,9 +42,9 @@ export interface LexKendraResponse {
         requestId: string;
     };
     sdkHttpMetadata: {
-        httpHeaders: object;
+        httpHeaders: Record<string, unknown>;
         httpStatusCode: number;
-        allHttpHeaders: object;
+        allHttpHeaders: Record<string, unknown>;
     };
     queryId: string;
     resultItems: LexKendraResponseResultItem[];
@@ -55,17 +56,17 @@ export interface LexRequestWithKendra extends LexRequest {
 
 export class TranslateLexConnectRequestWithKendra extends TranslateLexConnectRequest {
 
-    translate(lexRequest: LexRequestWithKendra): Request {
+    public translate(lexRequest: LexRequestWithKendra): Request {
         const translated = super.translate(lexRequest);
 
         if (lexRequest.kendraResponse) {
-            console.log('we have a kendra response!');
-            console.log(JSON.stringify(lexRequest.kendraResponse, undefined, 2));
+            log().debug('we have a kendra response!');
+            log().debug(JSON.stringify(lexRequest.kendraResponse, undefined, 2));
             let answer: string;
             let bestGuess: string;
             lexRequest.kendraResponse.resultItems.forEach((result) => {
                 if (result.type === "ANSWER") {
-                    console.log(`We have an answer from ${result.documentTitle.text}`);
+                    log().debug(`We have an answer from ${result.documentTitle.text}`);
                     // console.log(JSON.stringify(result, undefined, 2));
                     // Now find the top answer
                     result.additionalAttributes.forEach((attribute) => {
@@ -80,7 +81,7 @@ export class TranslateLexConnectRequestWithKendra extends TranslateLexConnectReq
                                     if (!bestGuess) {
                                         bestGuess = text.substring(highlight.beginOffset, highlight.endOffset);
                                     }
-                                    console.log(`Not a top answer ${text.substring(highlight.beginOffset, highlight.endOffset)}`)
+                                    log().debug(`Not a top answer ${text.substring(highlight.beginOffset, highlight.endOffset)}`)
                                 }
                             })
                         }
@@ -88,12 +89,12 @@ export class TranslateLexConnectRequestWithKendra extends TranslateLexConnectReq
                 }
             });
 
-            console.log(`Final answer to "${translated.rawQuery}"`);
-            console.log(answer)
-            console.log(`The best guess?`);
-            console.log(bestGuess);
+            log().debug(`Final answer to "${translated.rawQuery}"`);
+            log().debug(answer)
+            log().debug(`The best guess?`);
+            log().debug(bestGuess);
 
-            let matchConfidence: number = 0;
+            let matchConfidence = 0;
             if (answer) {
                 matchConfidence = 1;
             } else if (bestGuess) {
@@ -107,8 +108,8 @@ export class TranslateLexConnectRequestWithKendra extends TranslateLexConnectReq
                     answer: answer || bestGuess,
                     matchConfidence
                 }
-                console.log('Adding knowledgeAnser');
-                console.log(translated.knowledgeAnswer);
+                log().debug('Adding KnowledgeAnser');
+                log().debug(translated.knowledgeAnswer);
             }
         }
 
@@ -121,4 +122,4 @@ export function CustomLex(): Channel {
         ...LEX_CONNECT_CHANNEL,
         request: new TranslateLexConnectRequestWithKendra()
     }
-};
+}

@@ -5,6 +5,7 @@ A starter template for OC Studio leveraging 📣 stentor conversational framewor
 ### Sample .env
 
 ```
-OC_STUDIO_APP_ID=
+AWS_REGION=us-east-1
+STUDIO_APP_ID=
 USER_STORAGE_TABLE=
 ```
