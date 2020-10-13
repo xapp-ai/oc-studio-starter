@@ -1,5 +1,6 @@
 /*! Copyright (c) 2020, XAPP AI */
 // Loads the environment variables from a .env file at root
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 require("dotenv").config();
 
 // Assistant
@@ -20,12 +21,12 @@ import { QuestionAnsweringHandler } from "@xapp/question-answering-handler";
 export const handler: AWSLambda.Handler = new Assistant()
     .withUserStorage(
         new DynamoUserStorageService({
-            appId: process.env.OC_STUDIO_APP_ID,
+            appId: process.env.STUDIO_APP_ID,
             tableName: process.env.USER_STORAGE_TABLE
         })
     )
     .withHandlers({
-        QuestionAnsweringHandler
+        QuestionAnsweringHandler: QuestionAnsweringHandler
     })
     .withChannels([Alexa(), Dialogflow(), CustomLex()])
     .lambda();

@@ -26,28 +26,31 @@
     "@typescript-eslint/parser": "4.4.0",
     "@xapp/config": "0.2.3",
     "aws-sdk": "2.766.0",
+    "body-parser": "1.19.0",
     "chai": "4.2.0",
     "eslint-plugin-notice": "0.9.10",
     "eslint": "7.10.0",
+    "express": "4.16.3",
     "mocha": "8.1.3",
     "sinon-chai": "3.5.0",
     "sinon": "9.2.0",
-    "stentor": "1.33.75",
+    "stentor": "1.33.84",
     "ts-node": "9.0.0",
     "typescript": "4.0.3"
   },
   "scripts": {
     "build": "tsc -d true -p .",
     "clean": "rm -rf ./lib/*",
+    "express": "OVAI_LOG_LEVEL=debug node lib/express.js",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "test": "mocha --recursive -r ts-node/register \"./src/**/*.test.ts\""
   },
   "dependencies": {
-    "@xapp/question-answering-handler": "1.0.1",
-    "@xapp/stentor-alexa": "1.26.42",
-    "@xapp/stentor-dialogflow": "1.26.42",
-    "@xapp/stentor-lex-connect": "1.26.42",
-    "@xapp/stentor-service-user-storage": "1.26.42"
+    "@xapp/question-answering-handler": "1.0.12",
+    "@xapp/stentor-alexa": "1.26.56",
+    "@xapp/stentor-dialogflow": "1.26.56",
+    "@xapp/stentor-lex-connect": "1.26.56",
+    "@xapp/stentor-service-user-storage": "1.26.56"
   },
   "peerDependencies": {
     "stentor": "1.X"
