@@ -12,19 +12,14 @@ import { Dialogflow } from "@xapp/stentor-dialogflow";
 import { CustomLex } from "./channels/CustomLex";
 
 // Services
-import { DynamoUserStorageService } from "@xapp/stentor-service-user-storage";
+import { DynamoUserStorage } from "stentor-user-storage-dynamo";
 
 // Custom Handlers
 import { QuestionAnsweringHandler } from "@xapp/question-answering-handler";
 
 // Return the handler for running in an AWS Lambda function.
 export const handler: AWSLambda.Handler = new Assistant()
-    .withUserStorage(
-        new DynamoUserStorageService({
-            appId: process.env.STUDIO_APP_ID,
-            tableName: process.env.USER_STORAGE_TABLE
-        })
-    )
+    .withUserStorage(new DynamoUserStorage())
     .withHandlers({
         QuestionAnsweringHandler: QuestionAnsweringHandler
     })
