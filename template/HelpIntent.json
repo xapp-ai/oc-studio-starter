@@ -1,0 +1,24 @@
+{
+  "content": {
+    "HelpIntent": [
+      {
+        "outputSpeech": {
+          "displayText": "Sure, I can do my best to answer any questions you may have and if there is a question I can't answer I will direct you to the correct resources that can.  What can I help you with?",
+          "ssml": "Sure, I can do my best to answer any questions you may have and if there is a question I can't answer I will direct you to the correct resources that can.  What can I help you with?",
+          "suggestions": []
+        },
+        "reprompt": {
+          "displayText": "What question can I answer for you?",
+          "ssml": "What question can I answer for you?",
+          "suggestions": []
+        }
+      }
+    ]
+  },
+  "slots": [],
+  "name": "ℹ️ Global Help",
+  "intentId": "HelpIntent",
+  "langCode": "en-US",
+  "type": "ConversationHandler",
+  "utterancePatterns": ["help", "help please", "i need help", "please help"]
+}

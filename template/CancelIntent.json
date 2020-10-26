@@ -1,0 +1,24 @@
+{
+  "content": {
+    "CancelIntent": [
+      {
+        "outputSpeech": {
+          "displayText": "Ok, goodbye.",
+          "ssml": "Ok, goodbye.",
+          "suggestions": []
+        }
+      }
+    ]
+  },
+  "slots": [],
+  "name": "🛑 Cancel",
+  "intentId": "CancelIntent",
+  "langCode": "en-US",
+  "type": "ConversationHandler",
+  "utterancePatterns": [
+    "cancel",
+    "cancel please",
+    "please cancel",
+    "cancel now"
+  ]
+}
