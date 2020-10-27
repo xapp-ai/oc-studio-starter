@@ -1,0 +1,17 @@
+{
+  "name": "💁 Agent",
+  "intentId": "Agent",
+  "langCode": "en-US",
+  "slots": [
+    {
+      "name": "agent",
+      "type": "AGENT"
+    }
+  ],
+  "utterancePatterns": [
+    "${agent}",
+    "${agent} {please|now}",
+    "i {want|need} to speak to {a|an} ${agent}",
+    "give me an ${agent}"
+  ]
+}
