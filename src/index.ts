@@ -9,7 +9,7 @@ import { Assistant } from "stentor";
 // Channels
 import { Alexa } from "@xapp/stentor-alexa";
 import { Dialogflow } from "@xapp/stentor-dialogflow";
-import { CustomLex } from "./channels/CustomLex";
+import { LexConnect } from "@xapp/stentor-lex-connect";
 
 // Services
 import { DynamoUserStorage } from "stentor-user-storage-dynamo";
@@ -23,5 +23,5 @@ export const handler: AWSLambda.Handler = new Assistant()
     .withHandlers({
         QuestionAnsweringHandler: QuestionAnsweringHandler
     })
-    .withChannels([Alexa(), Dialogflow(), CustomLex()])
+    .withChannels([Alexa(), Dialogflow(), LexConnect()])
     .lambda();
