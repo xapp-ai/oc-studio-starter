@@ -1,57 +1,28 @@
 {
-  "name": "@xapp/oc-studio-starter",
+  "private": true,
   "repository": "github:xapp-ai/oc-studio-starter",
-  "license": "Apache-2.0",
-  "publishConfig": {
-    "access": "public"
-  },
-  "version": "1.0.1",
-  "description": "A starter template for OC Studio & 📣 stentor",
-  "types": "lib/index",
-  "typings": "lib/index",
-  "main": "lib/index",
-  "files": [
-    "dist",
-    "lib",
-    "template"
-  ],
   "engines": {
     "node": "10.x"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
-    "@types/chai": "4.2.14",
-    "@types/mocha": "8.2.0",
-    "@types/node": "14.14.14",
-    "@types/sinon": "9.0.9",
-    "@types/sinon-chai": "3.2.5",
-    "@typescript-eslint/eslint-plugin": "4.10.0",
-    "@typescript-eslint/parser": "4.10.0",
+    "@typescript-eslint/eslint-plugin": "2.34.0",
+    "@typescript-eslint/parser": "2.34.0",
     "@xapp/config": "0.2.3",
-    "aws-sdk": "2.812.0",
-    "body-parser": "1.19.0",
-    "chai": "4.2.0",
-    "eslint": "7.15.0",
+    "eslint": "7.14.0",
     "eslint-plugin-notice": "0.9.10",
-    "express": "4.17.1",
-    "mocha": "8.2.1",
-    "sinon": "9.2.2",
-    "sinon-chai": "3.5.0",
-    "ts-node": "9.1.1",
-    "typescript": "4.1.3"
+    "lerna": "3.22.1"
   },
   "scripts": {
-    "build": "tsc -d true -p .",
-    "clean": "rm -rf ./lib/*",
-    "express": "OVAI_LOG_LEVEL=debug node lib/express.js",
-    "lint": "eslint 'src/**/*.{ts,tsx}'",
-    "test": "mocha --recursive -r ts-node/register \"./src/**/*.test.ts\""
-  },
-  "dependencies": {
-    "@xapp/question-answering-handler": "1.0.31",
-    "@xapp/stentor-alexa": "1.29.9",
-    "@xapp/stentor-dialogflow": "1.29.4",
-    "@xapp/stentor-lex-connect": "1.29.6",
-    "stentor": "1.36.32",
-    "stentor-user-storage-dynamo": "1.36.31"
+    "lerna": "lerna",
+    "postinstall": "lerna bootstrap",
+    "clean": "lerna run clean",
+    "clean:modules": "lerna clean",
+    "lint": "eslint 'packages/**/src/**/*.{ts,tsx}'",
+    "build": "lerna run build",
+    "test": "TZ=UTC lerna run test",
+    "release": "lerna version --yes && git push origin --tags && lerna publish from-git --yes"
   }
 }
