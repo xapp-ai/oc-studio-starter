@@ -1,6 +1,6 @@
-agent | Agent | agent="agent"
-yes | Yes | yes="yes"
-no | No | no="no"
+agent | OCAgent | agent="agent"
+yes | OCYes | yes="yes"
+no | OCNo | no="no"
 cancel | CancelIntent |
 help | HelpIntent |
 repeat | RepeatIntent |
