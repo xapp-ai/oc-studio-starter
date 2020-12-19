@@ -13,7 +13,7 @@
     "postinstall": "lerna bootstrap",
     "clean": "lerna run clean",
     "clean:modules": "lerna clean",
-    "lint": "eslint 'packages/**/src/**/*.{ts,tsx}'",
+    "lint": "lerna run lint",
     "build": "lerna run build",
     "test": "TZ=UTC lerna run test",
     "release": "lerna version --yes && git push origin --tags && lerna publish from-git --yes"
