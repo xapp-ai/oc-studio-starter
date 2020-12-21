@@ -9,6 +9,8 @@ jobs:
   npm-publish:
     name: npm-publish
     runs-on: ubuntu-latest
+    env:
+      NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -24,11 +26,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: yarn --frozen-lockfile
-        env:
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       - run: yarn lint
       # - run: npm run test
       - run: yarn build
       - run: yarn release
-        env:
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
