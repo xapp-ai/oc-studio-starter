@@ -31,4 +31,6 @@ jobs:
       - run: yarn lint
       # - run: npm run test
       - run: yarn build
+      - run: yarn logout
+      - run: npm whoami
       - run: yarn release
