@@ -25,7 +25,7 @@ jobs:
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: 'echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > ~/.npmrc'
+      - run: echo //registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN} > .npmrc
         shell: bash
       - run: yarn --frozen-lockfile
       - run: yarn lint
