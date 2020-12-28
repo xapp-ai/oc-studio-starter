@@ -23,8 +23,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - run: 'echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > ~/.npmrc'
-        shell: bash
       - run: yarn --frozen-lockfile
       - run: yarn lint
       # - run: npm run test
