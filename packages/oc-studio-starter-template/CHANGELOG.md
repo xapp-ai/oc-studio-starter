@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.158 (2021-01-11)
+
+
+### Bug Fixes
+
+* **deps:** update stentor to v1.36.47 ([700abc0](https://github.com/xapp-ai/oc-studio-starter/commit/700abc01f7db10a3a2578912d467b414062e6979))
+
+
+
+
+
 ## 1.1.157 (2021-01-11)
 
 
