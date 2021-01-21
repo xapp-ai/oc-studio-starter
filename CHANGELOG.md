@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.191 (2021-01-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @xapp/question-answering-handler to v1.0.37 ([#181](https://github.com/xapp-ai/oc-studio-starter/issues/181)) ([2825e97](https://github.com/xapp-ai/oc-studio-starter/commit/2825e97e3f040b1b460d40125244fca28c176815))
+
+
+
+
+
 ## 1.1.190 (2021-01-21)
 
 
