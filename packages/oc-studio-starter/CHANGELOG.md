@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.205 (2021-01-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @xapp/stentor-lex-connect to v1.31.5 ([1b1fa9f](https://github.com/xapp-ai/oc-studio-starter/commit/1b1fa9f47e225461e223ac015c01ca72dc95b845))
+
+
+
+
+
 ## 1.1.204 (2021-01-25)
 
 
