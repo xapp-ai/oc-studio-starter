@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.284 (2021-02-27)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter-template
+
+
+
+
+
 ## 1.1.283 (2021-02-26)
 
 
