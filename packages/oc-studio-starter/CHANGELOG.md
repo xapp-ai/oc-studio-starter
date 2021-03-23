@@ -3,6 +3,422 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.351 (2021-03-23)
+
+
+### Bug Fixes
+
+* **deps:** update stentor ([256212e](https://github.com/xapp-ai/oc-studio-starter/commit/256212e2a6dbf7c1fecad2b686393ffcfd3ce815))
+
+
+
+
+
+## 1.1.350 (2021-03-23)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.349 (2021-03-23)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.348 (2021-03-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stentor to v1.38.21 ([914e4b4](https://github.com/xapp-ai/oc-studio-starter/commit/914e4b4f03904f703a83b6fbe01973635f057ed3))
+
+
+
+
+
+## 1.1.347 (2021-03-21)
+
+
+### Bug Fixes
+
+* **deps:** update stentor to v1.32.29 ([5ce24bd](https://github.com/xapp-ai/oc-studio-starter/commit/5ce24bd89bf75937a8dadf052ab8dd71700a768b))
+
+
+
+
+
+## 1.1.346 (2021-03-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stentor to v1.38.20 ([4e98dc7](https://github.com/xapp-ai/oc-studio-starter/commit/4e98dc7e95c27c9f67326b92a3fe18bdf129fb6b))
+
+
+
+
+
+## 1.1.345 (2021-03-21)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.344 (2021-03-20)
+
+
+### Bug Fixes
+
+* **deps:** update stentor to v1.32.28 ([e38e272](https://github.com/xapp-ai/oc-studio-starter/commit/e38e2721d5cade598adcd8cf937dc7eaacc067b9))
+
+
+
+
+
+## 1.1.343 (2021-03-20)
+
+
+### Bug Fixes
+
+* **deps:** update stentor to v1.38.19 ([1d22b02](https://github.com/xapp-ai/oc-studio-starter/commit/1d22b02fed8d15ec3baefc90c90019604d9cd312))
+
+
+
+
+
+## 1.1.342 (2021-03-20)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.341 (2021-03-19)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.340 (2021-03-18)
+
+
+### Bug Fixes
+
+* **deps:** update stentor to v1.32.27 ([8b4d822](https://github.com/xapp-ai/oc-studio-starter/commit/8b4d82274314b8e5454d3e8f149c37c77526d588))
+
+
+
+
+
+## 1.1.339 (2021-03-18)
+
+
+### Bug Fixes
+
+* **deps:** update stentor to v1.38.18 ([96e5590](https://github.com/xapp-ai/oc-studio-starter/commit/96e55906d362599e55550577fad5297369c784ec))
+
+
+
+
+
+## 1.1.338 (2021-03-18)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.337 (2021-03-17)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.336 (2021-03-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @xapp/stentor-lex-connect to v1.32.26 ([982455a](https://github.com/xapp-ai/oc-studio-starter/commit/982455a8b5881b871dfc642509c2d0a41bbf83eb))
+
+
+
+
+
+## 1.1.335 (2021-03-16)
+
+
+### Bug Fixes
+
+* **deps:** update stentor to v1.32.25 ([8e745d6](https://github.com/xapp-ai/oc-studio-starter/commit/8e745d6b27190578c4d0218d2dc40fea2a4c6183))
+
+
+
+
+
+## 1.1.334 (2021-03-16)
+
+
+### Bug Fixes
+
+* **deps:** update stentor ([72563e5](https://github.com/xapp-ai/oc-studio-starter/commit/72563e5c95cecefdbb2a5d4258575afc906a2a5b))
+
+
+
+
+
+## 1.1.333 (2021-03-16)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.332 (2021-03-16)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.331 (2021-03-15)
+
+
+### Bug Fixes
+
+* **deps:** update stentor ([7f9745f](https://github.com/xapp-ai/oc-studio-starter/commit/7f9745f1e35b2d31fa827bdb282ab0b765281680))
+
+
+
+
+
+## 1.1.330 (2021-03-15)
+
+
+### Bug Fixes
+
+* **deps:** update stentor to v1.38.15 ([47ad960](https://github.com/xapp-ai/oc-studio-starter/commit/47ad960fcf61cb2567739d69aeeae0595d3f3849))
+
+
+
+
+
+## 1.1.329 (2021-03-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stentor to v1.38.14 ([314c851](https://github.com/xapp-ai/oc-studio-starter/commit/314c85134e3196798e72037d313833aa4c810445))
+
+
+
+
+
+## 1.1.328 (2021-03-14)
+
+
+### Bug Fixes
+
+* **deps:** update stentor to v1.32.21 ([ca528f5](https://github.com/xapp-ai/oc-studio-starter/commit/ca528f5867fc9c8aa6530159b6a8600a597d5d6d))
+
+
+
+
+
+## 1.1.327 (2021-03-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stentor to v1.38.13 ([729bbef](https://github.com/xapp-ai/oc-studio-starter/commit/729bbef6c0176d2c66946938cb9310097547ed56))
+
+
+
+
+
+## 1.1.326 (2021-03-14)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.325 (2021-03-14)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.324 (2021-03-13)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.323 (2021-03-13)
+
+
+### Bug Fixes
+
+* **deps:** update stentor to v1.32.20 ([8c4a8ef](https://github.com/xapp-ai/oc-studio-starter/commit/8c4a8ef0ab7e501a1dbe741fe1370bdf784a76bc))
+
+
+
+
+
+## 1.1.322 (2021-03-13)
+
+
+### Bug Fixes
+
+* **deps:** update stentor ([c737d84](https://github.com/xapp-ai/oc-studio-starter/commit/c737d845de46f4374264f11fa17d96e4a31cdcdd))
+
+
+
+
+
+## 1.1.321 (2021-03-13)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.320 (2021-03-13)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.319 (2021-03-12)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.318 (2021-03-11)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.317 (2021-03-10)
+
+
+### Bug Fixes
+
+* **deps:** update stentor to v1.32.18 ([802d358](https://github.com/xapp-ai/oc-studio-starter/commit/802d35897be9f0a3b16b76d06dd6c91f80c695a0))
+
+
+
+
+
+## 1.1.316 (2021-03-10)
+
+
+### Bug Fixes
+
+* **deps:** update stentor ([7bb061d](https://github.com/xapp-ai/oc-studio-starter/commit/7bb061d3408b4c741e3c36a323ac8c626c5bc4e1))
+
+
+
+
+
+## 1.1.315 (2021-03-10)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.314 (2021-03-09)
+
+
+### Bug Fixes
+
+* **deps:** update stentor to v1.32.16 ([05ecec6](https://github.com/xapp-ai/oc-studio-starter/commit/05ecec66376f48089a49db2befc3c63e84058384))
+
+
+
+
+
+## 1.1.313 (2021-03-09)
+
+
+### Bug Fixes
+
+* **deps:** update stentor ([8e32daa](https://github.com/xapp-ai/oc-studio-starter/commit/8e32daa36e176679455d65e32cc0f8b242fe02b5))
+
+
+
+
+
+## 1.1.312 (2021-03-09)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.311 (2021-03-09)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
+## 1.1.310 (2021-03-08)
+
+
+### Bug Fixes
+
+* **deps:** update stentor to v1.32.14 ([8d28135](https://github.com/xapp-ai/oc-studio-starter/commit/8d281359518cd92e064f59adc9c44438dbefc9f3))
+
+
+
+
+
+## 1.1.309 (2021-03-08)
+
+
+### Bug Fixes
+
+* **deps:** update stentor ([228c595](https://github.com/xapp-ai/oc-studio-starter/commit/228c5953c1e826da392c94cf9da4c3aa3d6d5952))
+
+
+
+
+
 ## 1.1.308 (2021-03-08)
 
 **Note:** Version bump only for package @xapp/oc-studio-starter
