@@ -22,7 +22,7 @@
     "@typescript-eslint/eslint-plugin": "4.16.1",
     "@typescript-eslint/parser": "4.16.1",
     "@xapp/config": "0.2.3",
-    "aws-sdk": "2.858.0",
+    "aws-sdk": "2.869.0",
     "body-parser": "1.19.0",
     "chai": "4.3.3",
     "eslint": "7.21.0",
@@ -42,11 +42,11 @@
     "test": "mocha --recursive -r ts-node/register \"./src/**/*.test.ts\""
   },
   "dependencies": {
-    "@xapp/question-answering-handler": "1.1.0",
-    "@xapp/stentor-alexa": "1.32.12",
-    "@xapp/stentor-dialogflow": "1.32.12",
-    "@xapp/stentor-lex-connect": "1.32.12",
-    "stentor": "1.38.5",
-    "stentor-user-storage-dynamo": "1.38.5"
+    "@xapp/question-answering-handler": "1.2.0",
+    "@xapp/stentor-alexa": "1.32.33",
+    "@xapp/stentor-dialogflow": "1.32.33",
+    "@xapp/stentor-lex-connect": "1.32.33",
+    "stentor": "1.38.22",
+    "stentor-user-storage-dynamo": "1.38.22"
   }
 }
