@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.368 (2021-03-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @xapp/stentor-alexa to v1.32.41 ([cf09e3f](https://github.com/xapp-ai/oc-studio-starter/commit/cf09e3f1384fb3a9eb95c74c84fcf7886628dfea))
+
+
+
+
+
 ## 1.1.367 (2021-03-27)
 
 **Note:** Version bump only for package oc-studio-starter
