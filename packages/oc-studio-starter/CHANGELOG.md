@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.388 (2021-04-06)
+
+**Note:** Version bump only for package @xapp/oc-studio-starter
+
+
+
+
+
 ## 1.1.387 (2021-04-06)
 
 **Note:** Version bump only for package @xapp/oc-studio-starter
