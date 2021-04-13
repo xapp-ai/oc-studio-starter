@@ -1,44 +1,44 @@
 {
-    "content": {
-        "ByeIntent": [
+  "content": {
+    "ByeIntent": [
+      {
+        "outputSpeech": {
+          "displayText": "${BYE}",
+          "ssml": "${BYE}",
+          "suggestions": []
+        },
+        "segments": {
+          "BYE": [
             {
-                "outputSpeech": {
-                    "displayText": "${BYE}",
-                    "ssml": "${BYE}",
-                    "suggestions": []
-                },
-                "segments": {
-                    "BYE": [
-                        {
-                            "segment": {
-                                "displayText": "Goodbye",
-                                "ssml": "Goodbye"
-                            }
-                        },
-                        {
-                            "segment": {
-                                "displayText": "Bye",
-                                "ssml": "Bye"
-                            }
-                        }
-                    ]
-                }
+              "segment": {
+                "displayText": "Goodbye",
+                "ssml": "Goodbye"
+              }
+            },
+            {
+              "segment": {
+                "displayText": "Bye",
+                "ssml": "Bye"
+              }
             }
-        ]
-    },
-    "slots": [],
-    "name": "👋 Bye",
-    "intentId": "ByeIntent",
-    "langCode": "en-US",
-    "type": "ConversationHandler",
-    "utterancePatterns": [
-        "adios",
-        "bye bye",
-        "ciao",
-        "farewell",
-        "goodbye",
-        "see ya",
-        "see you",
-        "so long"
+          ]
+        }
+      }
     ]
+  },
+  "slots": [],
+  "name": "👋 Bye",
+  "intentId": "ByeIntent",
+  "langCode": "en-US",
+  "type": "ConversationHandler",
+  "utterancePatterns": [
+    "adios",
+    "bye bye",
+    "ciao",
+    "farewell",
+    "goodbye",
+    "see ya",
+    "see you",
+    "so long"
+  ]
 }
