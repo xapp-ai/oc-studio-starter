@@ -5,3 +5,4 @@ cancel | CancelIntent |
 help | HelpIntent |
 repeat | RepeatIntent |
 say that again | RepeatIntent |
+bye | ByeIntent
