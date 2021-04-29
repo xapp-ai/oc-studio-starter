@@ -13,14 +13,18 @@
           "suggestions": []
         },
         "segments": {
-          "GREETING": [{ "segment": "Hello" }, { "segment": "Hi" }]
+          "GREETING": [
+            { "segment": { "displayText": "Hi", "ssml": "Hi" } },
+            { "segment": { "displayText": "Hello", "ssml": "Hello" } }
+          ]
         }
       }
     ]
   },
+  "data": {},
   "intentId": "LaunchRequest",
   "langCode": "en-US",
   "name": "👋 Welcome",
   "type": "ConversationHandler",
-  "utterancePatterns": []
+  "utterancePatterns": ["hello", "hi", "howdy"]
 }
