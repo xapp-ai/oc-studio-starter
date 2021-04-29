@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.428](https://github.com/xapp-ai/oc-studio-starter/compare/v1.1.427...v1.1.428) (2021-04-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @xapp/question-answering-handler to v1.3.1 ([#446](https://github.com/xapp-ai/oc-studio-starter/issues/446)) ([3b637ff](https://github.com/xapp-ai/oc-studio-starter/commit/3b637ff431971767410d53f238f275d8a995187f))
+* **deps:** update dependency @xapp/stentor-alexa to v1.32.76 ([9ec6d94](https://github.com/xapp-ai/oc-studio-starter/commit/9ec6d940035173760d8aa11f3faac52d8cc38143))
+* **deps:** update stentor to v1.32.75 ([ac3fae4](https://github.com/xapp-ai/oc-studio-starter/commit/ac3fae494dad2914f7a782520b0e7f6ec22c4f51))
+* **deps:** update stentor to v1.32.78 ([cb0bcb0](https://github.com/xapp-ai/oc-studio-starter/commit/cb0bcb052b844f321d357cbccd5e43db52f20d06))
+* **deps:** update stentor to v1.32.81 ([3d28541](https://github.com/xapp-ai/oc-studio-starter/commit/3d28541f84758675bb5495ae20bb316937ef9713))
+
+
+
+
+
 ## 1.1.427 (2021-04-16)
 
 
