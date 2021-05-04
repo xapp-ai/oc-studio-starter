@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.430](https://github.com/xapp-ai/oc-studio-starter/compare/v1.1.429...v1.1.430) (2021-05-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stentor to v1.39.3 ([7688d69](https://github.com/xapp-ai/oc-studio-starter/commit/7688d691a36ddbfadbc52e2e911439810c3074d9))
+* **deps:** update stentor to v1.32.83 ([9243372](https://github.com/xapp-ai/oc-studio-starter/commit/92433729db7a548ed80c5dbe9ef44e909ff9d78a))
+* **deps:** update stentor to v1.39.1 ([344e403](https://github.com/xapp-ai/oc-studio-starter/commit/344e403bd97630734dff79af7c194eacb8e2d9a7))
+* **deps:** update stentor to v1.39.2 ([ab3cb27](https://github.com/xapp-ai/oc-studio-starter/commit/ab3cb27a95d0817dec10a9f313603608923bf92a))
+
+
+
+
+
 ## [1.1.429](https://github.com/xapp-ai/oc-studio-starter/compare/v1.1.428...v1.1.429) (2021-04-30)
 
 
