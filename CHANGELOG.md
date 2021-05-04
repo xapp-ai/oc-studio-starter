@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.431](https://github.com/xapp-ai/oc-studio-starter/compare/v1.1.430...v1.1.431) (2021-05-04)
+
+**Note:** Version bump only for package oc-studio-starter
+
+
+
+
+
 ## [1.1.430](https://github.com/xapp-ai/oc-studio-starter/compare/v1.1.429...v1.1.430) (2021-05-04)
 
 
