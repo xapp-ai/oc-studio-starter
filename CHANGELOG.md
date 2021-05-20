@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.432](https://github.com/xapp-ai/oc-studio-starter/compare/v1.1.431...v1.1.432) (2021-05-20)
+
+
+### Bug Fixes
+
+* Suggestion Chip Types on InputUnknown ([#471](https://github.com/xapp-ai/oc-studio-starter/issues/471)) ([3cac849](https://github.com/xapp-ai/oc-studio-starter/commit/3cac84974790481505f5c885e22f16b6212f980d))
+* **deps:** update dependency stentor to v1.40.1 ([8767cf6](https://github.com/xapp-ai/oc-studio-starter/commit/8767cf613f6b43168ce1a1032e728ea6f193351c))
+
+
+
+
+
 ## [1.1.431](https://github.com/xapp-ai/oc-studio-starter/compare/v1.1.430...v1.1.431) (2021-05-04)
 
 **Note:** Version bump only for package oc-studio-starter

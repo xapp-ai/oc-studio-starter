@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.432](https://github.com/xapp-ai/oc-studio-starter/compare/v1.1.431...v1.1.432) (2021-05-20)
+
+
+### Bug Fixes
+
+* Suggestion Chip Types on InputUnknown ([#471](https://github.com/xapp-ai/oc-studio-starter/issues/471)) ([3cac849](https://github.com/xapp-ai/oc-studio-starter/commit/3cac84974790481505f5c885e22f16b6212f980d))
+
+
+
+
+
 ## [1.1.429](https://github.com/xapp-ai/oc-studio-starter/compare/v1.1.428...v1.1.429) (2021-04-30)
 
 **Note:** Version bump only for package @xapp/oc-studio-starter-template
