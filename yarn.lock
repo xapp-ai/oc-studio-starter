@@ -1534,6 +1534,11 @@
     runes "0.4.3"
     slugify "1.3.4"
 
+"@xapp/patterns@1.32.114":
+  version "1.32.114"
+  resolved "https://registry.yarnpkg.com/@xapp/patterns/-/patterns-1.32.114.tgz#f9a9db5a29ed35bca38beeaa1d68e7839ce2e942"
+  integrity sha512-BZ80nr3eQO6gf3nL167BwnKaCWTs7NC+pcgZ3T+ZzAr9uhX6w3dPLWJKwgrnFnlJ3cPGN71uVKGI28G0d/gVdQ==
+
 "@xapp/patterns@1.32.99":
   version "1.32.99"
   resolved "https://registry.yarnpkg.com/@xapp/patterns/-/patterns-1.32.99.tgz#b2a2898c173930cd6f049b74ad3d3bbaf3210804"
@@ -1546,12 +1551,12 @@
   dependencies:
     fuse.js "6.4.6"
 
-"@xapp/stentor-actions-on-google@1.32.113":
-  version "1.32.113"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-actions-on-google/-/stentor-actions-on-google-1.32.113.tgz#42e9c15382e7567cdbbeec483b4617805f05241f"
-  integrity sha512-GYICGSJHOfEKXgQXxrOxQRhLiCyrx4834MOQW1eacFsZKdOgvjPmW6e1wq7txDOp3rN+p/c9AmPd1mcj3eCa5w==
+"@xapp/stentor-actions-on-google@1.32.114":
+  version "1.32.114"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-actions-on-google/-/stentor-actions-on-google-1.32.114.tgz#941570374e96c89b2d06952a0dd172c5041a2114"
+  integrity sha512-3JlISAoHR95ZCdLMfpSxxbCWrF3tWYseha8mYSm/PLJA8tGZ6bRkPlGzxfkD4d5uI4mljHMnsMoU6S5N5M9avg==
   dependencies:
-    "@xapp/patterns" "1.32.99"
+    "@xapp/patterns" "1.32.114"
     actions-on-google "2.14.0"
     stentor-constants "1.41.10"
     stentor-guards "1.41.11"
@@ -1571,12 +1576,12 @@
     stentor-constants "1.41.10"
     stentor-utils "1.41.11"
 
-"@xapp/stentor-alexa@1.32.113":
-  version "1.32.113"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-alexa/-/stentor-alexa-1.32.113.tgz#fdeb8249de22ca02031a5a4bdaa94b7dfa2bb3af"
-  integrity sha512-vPDsjn3KBHqpr/QcOz1D1QkDXTtAQMtuW+9h4ZAJeWyBVy+RsEnPJSUh2XpTEP1ypnRbSCmDk7pjtEpAkIkIbw==
+"@xapp/stentor-alexa@1.32.114":
+  version "1.32.114"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-alexa/-/stentor-alexa-1.32.114.tgz#9fe5083368670e4ac718db983ba1fc6b7f940b45"
+  integrity sha512-ZsA04OguFFsRZp00Nn5o80ZF+mvX3u/8XohoR0kdEZyjE1f7/O9Da2fckfmL0kXvxgETAhftLk8hyNQLWAZ2ow==
   dependencies:
-    "@xapp/patterns" "1.32.99"
+    "@xapp/patterns" "1.32.114"
     "@xapp/stentor-alexa-lib" "1.32.113"
     alexa-verifier "2.0.2"
     amazon-date-parser "0.3.0"
@@ -1602,14 +1607,14 @@
   dependencies:
     stentor-utils "1.41.11"
 
-"@xapp/stentor-dialogflow@1.32.113":
-  version "1.32.113"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-dialogflow/-/stentor-dialogflow-1.32.113.tgz#00352d780525383dbfa496690d916f506dd3ca75"
-  integrity sha512-BDF15dg8hMWIBtAeHZu0Fyu34RD4yNn3R/IWeEHmbkzWONAQVMwvn4874b28+uXeuSairpYjqMk1NP5quOE0+A==
+"@xapp/stentor-dialogflow@1.32.114":
+  version "1.32.114"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-dialogflow/-/stentor-dialogflow-1.32.114.tgz#4596b4de30da2ff01a3add8d15339af7812bd001"
+  integrity sha512-Q0l9klshn0QN30cEDg2l3fGPxoaoe6AvRJxTMJn9dZHgWuhkn/NpQoC9fQNcNVkKqBwVuei4oyPmfXzt5Ds9rA==
   dependencies:
     "@types/dialogflow" "0.11.0"
-    "@xapp/patterns" "1.32.99"
-    "@xapp/stentor-actions-on-google" "1.32.113"
+    "@xapp/patterns" "1.32.114"
+    "@xapp/stentor-actions-on-google" "1.32.114"
     "@xapp/stentor-app" "1.32.113"
     actions-on-google "2.14.0"
     dialogflow "0.14.1"
@@ -1623,12 +1628,12 @@
     stentor-response "1.41.11"
     stentor-utils "1.41.11"
 
-"@xapp/stentor-lex-connect@1.32.113":
-  version "1.32.113"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-lex-connect/-/stentor-lex-connect-1.32.113.tgz#198d64d70c9928ad493e446ccf06199beceac1d2"
-  integrity sha512-NvRXwnmslNJuRMJPb8lqocalj3sm55VA0IN4cX/56A+o9CP3zahzNzVo0Krg51DMbBgO10BmskF79IlEUT8MUA==
+"@xapp/stentor-lex-connect@1.32.115":
+  version "1.32.115"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-lex-connect/-/stentor-lex-connect-1.32.115.tgz#acc628bb6683c236774b5f5abbf28b3ef8919f0b"
+  integrity sha512-hcUab2xUIH3qkNsb5NxWNJCHJ/4dL14miryPJCiE9bakv9bMK0FHEFqaAI+TflIsKJ8h1qHa6b+MFoDpHHjKhw==
   dependencies:
-    "@xapp/patterns" "1.32.99"
+    "@xapp/patterns" "1.32.114"
     "@xapp/stentor-alexa-lib" "1.32.113"
     "@xapp/stentor-lex-lib" "1.32.113"
     actions-on-google "2.14.0"
