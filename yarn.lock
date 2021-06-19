@@ -1539,10 +1539,10 @@
   resolved "https://registry.yarnpkg.com/@xapp/patterns/-/patterns-1.32.130.tgz#ea317e00539af2c3a2ddddc03f7c500dc4bf58ab"
   integrity sha512-To7pIDvFgdDc1WwbYbalYaZo37/n/OhQYVLyuXttUL6/aE+uQIo/wNddwVcZ4y7JumpOQD68yh163JbGKedV4A==
 
-"@xapp/patterns@1.32.138":
-  version "1.32.138"
-  resolved "https://registry.yarnpkg.com/@xapp/patterns/-/patterns-1.32.138.tgz#c3e724709e98177ef9e6a76980429f36dfeb803a"
-  integrity sha512-P3uNgyABuzVfu6CZWC/di+ISdPrLf3Y6zEEHFw11lQUe8S3KfkwU9Mi7UwwNUv5a8KznBYEdBCojHVvvlByB3Q==
+"@xapp/patterns@1.32.143":
+  version "1.32.143"
+  resolved "https://registry.yarnpkg.com/@xapp/patterns/-/patterns-1.32.143.tgz#df1f5019c5f077aa58e9c50b37ee5c61fd19b2ce"
+  integrity sha512-KYrQpG0IeIb7aYXt1yiDs9xG8cj559SPpc3XvlSfUXMcz/u9r1SyImNR8/XlGf22+HlFtaUqBgpaNS8LY39zlA==
 
 "@xapp/question-answering-handler@1.3.1":
   version "1.3.1"
@@ -1551,29 +1551,29 @@
   dependencies:
     fuse.js "6.4.6"
 
-"@xapp/stentor-actions-on-google@1.32.142":
-  version "1.32.142"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-actions-on-google/-/stentor-actions-on-google-1.32.142.tgz#43c77966b97ea4291cd169a4a15961bce688a3a1"
-  integrity sha512-oijOwVf3p9jvhR+pAEww1XmXxaDp5Boo4ycOJn+Rq0AwnTBlfa0kwPgVEWOpwPS9v2Q4Swx7G+iVsqhkL91Ybw==
+"@xapp/stentor-actions-on-google@1.32.143":
+  version "1.32.143"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-actions-on-google/-/stentor-actions-on-google-1.32.143.tgz#4ed87e25858f8d1887427728b076a20fa2e933ee"
+  integrity sha512-bNArfdMqoM1QpnIa+T42ovHihFWS6AaZUW/gKOCPgC6OBDGBNwzhYj2QDslC2St4OV7HHjetou9wgtF6OykvYg==
   dependencies:
-    "@xapp/patterns" "1.32.138"
+    "@xapp/patterns" "1.32.143"
     actions-on-google "2.14.0"
 
-"@xapp/stentor-alexa-lib@1.32.142":
-  version "1.32.142"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-alexa-lib/-/stentor-alexa-lib-1.32.142.tgz#c0bef7cd9258d196842687f311f1eb87546fdb30"
-  integrity sha512-bbV/Ww5ciPqYj4SiPyfpF/WiTeqDR7XCKD6bgFeZU20c6vqzs9lrBFtXxcXYv1j68im36O01ePF87F+VqsR6kQ==
+"@xapp/stentor-alexa-lib@1.32.143":
+  version "1.32.143"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-alexa-lib/-/stentor-alexa-lib-1.32.143.tgz#5a6c937d1f253ca2dbcd9eb89f02bcb5be9099fd"
+  integrity sha512-5Qy8yXcRCM9yRaN7pFSjdHX09d7WPUIMNJUC1OpHeT+mWYwOxOTeyjEqQlsuQ/UvocDnC6piCDvd42I5gWY9JQ==
   dependencies:
     ask-sdk-model "1.35.1"
     lodash.invert "4.3.0"
 
-"@xapp/stentor-alexa@1.32.142":
-  version "1.32.142"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-alexa/-/stentor-alexa-1.32.142.tgz#18cc383875a0b6245e2b37f4961cfc2b38357574"
-  integrity sha512-h9sAG8yLJmPuWFH/PzlfoDXWMoABY2FKofLFngtjmzrcs7NdJQ2iJUVUPxty71UUv3S7cnhT8am73px2EsbMuA==
+"@xapp/stentor-alexa@1.32.143":
+  version "1.32.143"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-alexa/-/stentor-alexa-1.32.143.tgz#410db20ae207013e74d848598316970d68d8e88b"
+  integrity sha512-mxplqPef5P0fQDTwleOQRJXUWiVv2rtnAaJOOEF+snxX3FfGZBmsfQEClJrKjqfZIxlKKxWIqP13nqJ62TRFeA==
   dependencies:
-    "@xapp/patterns" "1.32.138"
-    "@xapp/stentor-alexa-lib" "1.32.142"
+    "@xapp/patterns" "1.32.143"
+    "@xapp/stentor-alexa-lib" "1.32.143"
     alexa-verifier "2.0.2"
     amazon-date-parser "0.3.0"
     ask-sdk-model "1.35.1"
@@ -1583,39 +1583,39 @@
     lodash.invert "4.3.0"
     moment "2.29.1"
 
-"@xapp/stentor-app@1.32.142":
-  version "1.32.142"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-app/-/stentor-app-1.32.142.tgz#befc5b96ef9af43503d7081b1773440edd10fd9a"
-  integrity sha512-lo9luOf6+qZmiQ9H0I8UNDoQkziLBuA0J4a+3L22ZTnCubSR3StWZzAeb7cNFVM2J6XJr4nj4Ij3Xj8fB5henA==
+"@xapp/stentor-app@1.32.143":
+  version "1.32.143"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-app/-/stentor-app-1.32.143.tgz#7e653e377225e5a8ab0c48c5b68663c2f9e4a616"
+  integrity sha512-pAOrf0sV7lUEdbrb8IAYttLMrANSWd33oNTVsm/cqS2XsN3Hdfa4K/yi0qZ9qWuEoC6Kvb5L1Mq/4/VuBGYQ6g==
 
-"@xapp/stentor-dialogflow@1.32.142":
-  version "1.32.142"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-dialogflow/-/stentor-dialogflow-1.32.142.tgz#d5debd2292ca8f7c7a90f363f2ec993b064a1c1f"
-  integrity sha512-M32nqaY1oW0BXijQWqzqtmR5me15X0n0yE5PFxlOFmioQk2MHqCQLSbSIsQSXAnNiHTqLnESUhgmP12UrCvseg==
+"@xapp/stentor-dialogflow@1.32.143":
+  version "1.32.143"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-dialogflow/-/stentor-dialogflow-1.32.143.tgz#1e3b23461e8a789f9f9f424fde6dbd1138208ce4"
+  integrity sha512-aFcRejFhhrySm/nH1XZenAcSeEWsnkrtl84R99h8H4yTIgxlWj+P1mfLLzPRSH8Nn1htre4eI9a93SQEtndEJA==
   dependencies:
     "@types/dialogflow" "0.11.0"
-    "@xapp/patterns" "1.32.138"
-    "@xapp/stentor-actions-on-google" "1.32.142"
-    "@xapp/stentor-app" "1.32.142"
+    "@xapp/patterns" "1.32.143"
+    "@xapp/stentor-actions-on-google" "1.32.143"
+    "@xapp/stentor-app" "1.32.143"
     actions-on-google "2.14.0"
     dialogflow "0.14.1"
 
-"@xapp/stentor-lex-connect@1.32.142":
-  version "1.32.142"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-lex-connect/-/stentor-lex-connect-1.32.142.tgz#e65edf8e1aa1eb43ad8407f99cc4ca6a8a806524"
-  integrity sha512-D/JEyxA2syYBGfwBcPWgfC/i8s2VgS79To9zGJM4NX9MaUT2QjA/cQdC62jqMG8GScr/xQSgMm7dV2sVyPxHJw==
+"@xapp/stentor-lex-connect@1.32.143":
+  version "1.32.143"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-lex-connect/-/stentor-lex-connect-1.32.143.tgz#aa4bc828c651ebc2c255d4dce0d6b7f557faa192"
+  integrity sha512-YMpwbqE5qo1LCKIEK0NjKWlnZ6u70ASkVGmTvjmWSYEaM7iFsygvqIcpKNETYUucnB340CcDnZktbShbMQUeFA==
   dependencies:
-    "@xapp/patterns" "1.32.138"
-    "@xapp/stentor-alexa-lib" "1.32.142"
-    "@xapp/stentor-lex-lib" "1.32.142"
+    "@xapp/patterns" "1.32.143"
+    "@xapp/stentor-alexa-lib" "1.32.143"
+    "@xapp/stentor-lex-lib" "1.32.143"
     actions-on-google "2.14.0"
 
-"@xapp/stentor-lex-lib@1.32.142":
-  version "1.32.142"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-lex-lib/-/stentor-lex-lib-1.32.142.tgz#a10d6f789c300404db2d87b7d20019178c632de4"
-  integrity sha512-Xpaf0xRGlA+F4F4T0+08WfdEW0AwAGKSHQfo6Y2uaxM/DksZ6jt9EaKWZz4KsoItoVkwU5JaP8isOr48WklMIg==
+"@xapp/stentor-lex-lib@1.32.143":
+  version "1.32.143"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-lex-lib/-/stentor-lex-lib-1.32.143.tgz#7d72f09c4040ed9fbe3b66157385ce0df7aef0e8"
+  integrity sha512-8bZm4QGE5KlxqprLoWFnIuHJB+fCQUa+n7BGmDWBk6XzlAe7P40xpj04jRzZzkMysn7y8ubJ3nb8gOd7FUaRXw==
   dependencies:
-    "@xapp/stentor-alexa-lib" "1.32.142"
+    "@xapp/stentor-alexa-lib" "1.32.143"
     lodash.merge "4.6.2"
 
 JSONStream@^1.0.4:
