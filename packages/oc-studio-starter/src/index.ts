@@ -19,7 +19,7 @@ import { DynamoUserStorage } from "stentor-user-storage-dynamo";
 import { QuestionAnsweringHandler } from "@xapp/question-answering-handler";
 
 // Return the handler for running in an AWS Lambda function.
-export const handler: AWSLambda.Handler = new Assistant()
+export const handler = new Assistant()
     .withUserStorage(new DynamoUserStorage())
     .withHandlers({
         QuestionAnsweringHandler: QuestionAnsweringHandler
