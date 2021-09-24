@@ -3,6 +3,7 @@
 const path = require("path");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const nodeExternals = require("webpack-node-externals");
+const { IgnorePlugin } = require("webpack");
 
 module.exports = {
   context: __dirname,
@@ -10,10 +11,10 @@ module.exports = {
   entry: "./src/index.ts",
   externals: [nodeExternals()],
   optimization: {
-    minimize: true,
+    minimize: false,
   },
   resolve: {
-    extensions: [".ts", ".tsx", ".js", ".jsx", ".json"],
+    extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
   },
   output: {
     libraryTarget: "commonjs",
@@ -32,6 +33,9 @@ module.exports = {
     ],
   },
   plugins: [
+    new IgnorePlugin({
+      resourceRegExp: /coffee-script/,
+    }),
     new ForkTsCheckerWebpackPlugin({
       typescript: {
         diagnosticOptions: {
