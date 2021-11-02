@@ -5,13 +5,11 @@ const fs = require("fs");
 const process = require("process");
 const { execSync } = require("child_process");
 
-fs.copyFileSync("./package.json", "./dist/package.json", (err) => {
-  if (err) throw err;
-});
+fs.copyFileSync("./package.json", "./lib/package.json");
 
 console.log("package.json was copied");
 
-process.chdir("./dist");
+process.chdir("./lib");
 
 console.log(`Installing....`);
 
@@ -23,11 +21,14 @@ execSync("rm -R ./node_modules/aws-sdk/ || true");
 
 console.log("Zipping....");
 
-execSync("zip -r ibx-assistant.zip ./index.js ./package.json ./node_modules", {
-  stdio: "ignore",
-});
+execSync(
+  "zip -r oc-studio-starter.zip ./index.js ./package.json ./node_modules",
+  {
+    stdio: "ignore",
+  }
+);
 
-const stats = fs.statSync("./ibx-assistant.zip");
+const stats = fs.statSync("./oc-studio-starter.zip");
 var fileSizeInMegabytes = stats.size / (1024 * 1024);
 
 console.log(`Zipped package is ${fileSizeInMegabytes} MB`);
