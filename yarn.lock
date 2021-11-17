@@ -2146,10 +2146,18 @@
   resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-0.0.33.tgz#17083d9c569048792f4f33ef6cd6aaf54d5b22d3"
   integrity sha512-p13MzAb/1ZJK1h0jDhRjdFqlRHC44HAOS7qYuVpn7NnFDv8UdNbRjExfhK69syvI9IoIR4NN4dRGjpVDsN6tEQ==
 
-"@types/body-parser@*", "@types/body-parser@1.19.1":
+"@types/body-parser@*":
   version "1.19.1"
   resolved "https://registry.yarnpkg.com/@types/body-parser/-/body-parser-1.19.1.tgz#0c0174c42a7d017b818303d4b5d969cb0b75929c"
   integrity sha512-a6bTJ21vFOGIkwM0kzh9Yr89ziVxq4vYH2fQ6N8AeipEzai/cFK6aGMArIkUeIdRIgpwQa+2bXiLuUJCpSf2Cg==
+  dependencies:
+    "@types/connect" "*"
+    "@types/node" "*"
+
+"@types/body-parser@1.19.2":
+  version "1.19.2"
+  resolved "https://registry.yarnpkg.com/@types/body-parser/-/body-parser-1.19.2.tgz#aea2059e28b7658639081347ac4fab3de166e6f0"
+  integrity sha512-ALYone6pm6QmwZoAgeyNksccT9Q4AWZQ6PvfwR37GT6r6FWUPguq6sUmNGSMV2Wr761oQoBxwGGa6DR5o1DC9g==
   dependencies:
     "@types/connect" "*"
     "@types/node" "*"
@@ -9423,13 +9431,13 @@ stentor-utils@1.48.18:
     words-to-numbers "1.5.1"
     xmldoc "1.1.2"
 
-stentor@1.48.18:
-  version "1.48.18"
-  resolved "https://registry.yarnpkg.com/stentor/-/stentor-1.48.18.tgz#cb8d4a5a91dbc2539ede8afb479ef635305c91bc"
-  integrity sha512-oo1W/OyRsARR3kcwTSmTU8TbK0wJEHWq1JqiGSGFKYoAxSPISbuNSgOK4XgCURPXaBs5dqMLdWAlaiBj4giVig==
+stentor@1.48.19:
+  version "1.48.19"
+  resolved "https://registry.yarnpkg.com/stentor/-/stentor-1.48.19.tgz#6d421846db80c1a560d54ff242def5ce4c6546f6"
+  integrity sha512-xcx8diSut2ZxQlBbxZoUg3dkIB9z9F4kgHxy6qJKazsLyBDntY7nGcLb1WZS34j3NAxlZKx4kMffBl+oyBSTVg==
   dependencies:
     "@types/aws-lambda" "8.10.85"
-    "@types/body-parser" "1.19.1"
+    "@types/body-parser" "1.19.2"
     "@types/express" "4.17.13"
     "@xapp/patterns" "1.38.2"
     body-parser "1.19.0"
