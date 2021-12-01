@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/xapp-ai/oc-studio-starter/compare/v1.1.433...v1.2.0) (2021-12-01)
+
+
+### Features
+
+* Adding Lex V2 Channel ([#861](https://github.com/xapp-ai/oc-studio-starter/issues/861)) ([93945fb](https://github.com/xapp-ai/oc-studio-starter/commit/93945fb5477fa6646621423f971311b5cff300e2))
+
+
+
+
+
 ## [1.1.433](https://github.com/xapp-ai/oc-studio-starter/compare/v1.1.432...v1.1.433) (2021-08-17)
 
 **Note:** Version bump only for package @xapp/oc-studio-starter-template
