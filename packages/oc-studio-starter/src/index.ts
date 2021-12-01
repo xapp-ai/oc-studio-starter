@@ -10,6 +10,7 @@ import { Assistant } from "stentor";
 import { Alexa } from "@xapp/stentor-alexa";
 import { Dialogflow } from "@xapp/stentor-dialogflow";
 import { LexConnect } from "@xapp/stentor-lex-connect";
+import { LexV2Channel } from "@xapp/stentor-lex-v2";
 import { Stentor } from "stentor-channel";
 
 // Services
@@ -24,5 +25,5 @@ export const handler = new Assistant()
     .withHandlers({
         QuestionAnsweringHandler: QuestionAnsweringHandler
     })
-    .withChannels([Alexa(), Dialogflow(), LexConnect(), Stentor()])
+    .withChannels([Alexa(), Dialogflow(), LexConnect(), LexV2Channel(), Stentor()])
     .lambda();
