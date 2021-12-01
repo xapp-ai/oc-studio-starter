@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/xapp-ai/oc-studio-starter/compare/v1.2.0...v1.2.1) (2021-12-01)
+
+
+### Bug Fixes
+
+* Updates lex-v2 NLU override for OCSearch ([#862](https://github.com/xapp-ai/oc-studio-starter/issues/862)) ([bfe8f71](https://github.com/xapp-ai/oc-studio-starter/commit/bfe8f71254879393e8b2f5532c30e1ae27a2d3e3))
+
+
+
+
+
 # [1.2.0](https://github.com/xapp-ai/oc-studio-starter/compare/v1.1.433...v1.2.0) (2021-12-01)
 
 
