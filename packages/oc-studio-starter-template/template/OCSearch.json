@@ -1,5 +1,101 @@
 {
-  "content": {},
+  "content": {
+    "OCSearch": [
+      {
+        "conditions": "!!session('TOP_FAQ')",
+        "outputSpeech": {
+          "displayText": "${TOP_FAQ.markdownText}\n\nAny other questions?",
+          "ssml": "<speak>${TOP_FAQ.text} Any other questions?</speak>",
+          "suggestions": [
+            {
+              "title": "Read More",
+              "url": "${TOP_FAQ.source}"
+            }
+          ]
+        },
+        "reprompt": {
+          "displayText": "Any other questions?",
+          "ssml": "<speak>Any other questions?</speak>"
+        }
+      },
+      {
+        "conditions": "!!session('TOP_ANSWER') && !session('TOP_FAQ')",
+        "outputSpeech": {
+          "displayText": "${TOP_ANSWER.markdownText}\n\nAny other questions?",
+          "ssml": "<speak>${TOP_ANSWER.text} Any other questions?</speak>",
+          "suggestions": [
+            {
+              "title": "Read More",
+              "url": "${TOP_ANSWER.source}"
+            }
+          ]
+        },
+        "reprompt": {
+          "displayText": "Any other questions?",
+          "ssml": "<speak>Any other questions?</speak>"
+        }
+      },
+      {
+        "conditions": "!${$.request.device.canSpeak} && !!session('SUGGESTED_ANSWER') && !session('TOP_ANSWER') && !session('TOP_FAQ')",
+        "outputSpeech": {
+          "displayText": "Here is what I found...\n\"${SUGGESTED_ANSWER.markdownText}\"\nAny other questions?",
+          "ssml": "<speak>Here is what I found...${SUGGESTED_ANSWER.markdownText}  Any other questions?</speak>",
+          "suggestions": [
+            {
+              "title": "Read More",
+              "url": "${SUGGESTED_ANSWER.source}"
+            }
+          ]
+        },
+        "reprompt": {
+          "displayText": "Any other questions?",
+          "ssml": "<speak>Any other questions?</speak>"
+        }
+      },
+      {
+        "reprompt": {
+          "displayText": "Any other questions?",
+          "ssml": "<speak>Any other questions?</speak>"
+        },
+        "displays": [
+          {
+            "itemsObject": "${SEARCH_RESULTS}",
+            "range": {
+              "length": 3,
+              "from": 0
+            },
+            "itemsName": "currentResult",
+            "type": "LIST",
+            "title": "${$.request.rawQuery}",
+            "items": [
+              {
+                "description": "${currentResult.document}",
+                "title": "${currentResult.title}",
+                "url": "${currentResult.source}",
+                "synonyms": [],
+                "token": "result-${index}"
+              }
+            ]
+          }
+        ],
+        "conditions": "!${$.request.device.canSpeak} && !!session('SEARCH_RESULTS') && !session('SUGGESTED_ANSWER') && !session('TOP_ANSWER') && !session('TOP_FAQ')",
+        "outputSpeech": {
+          "displayText": "Sorry, I’m not sure I understood that.  I’m still learning…\nThe articles below may help.",
+          "ssml": "<speak>Here is what I found...</speak>"
+        }
+      },
+      {
+        "outputSpeech": {
+          "displayText": "I'm sorry, I don't know that one. What else can I help you with?",
+          "ssml": "<speak>I'm sorry, I don't know that one. What else can I help you with?</speak>"
+        },
+        "reprompt": {
+          "displayText": "What else can I help you with?",
+          "ssml": "What else can I help you with?"
+        }
+      }
+    ]
+  },
   "data": {
     "QNA_BOT_LONGEST_HIGHLIGHT": false,
     "REMOVE_LEADING_LINES_WITHOUT_HIGHLIGHTS": true,
