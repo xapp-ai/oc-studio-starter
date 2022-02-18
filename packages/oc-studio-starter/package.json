@@ -14,7 +14,7 @@
     "lib"
   ],
   "engines": {
-    "node": "^12 || ^14"
+    "node": "^12 || ^14 || ^16"
   },
   "devDependencies": {
     "@babel/core": "7.17.2",
@@ -58,7 +58,7 @@
     "test": "exit 0"
   },
   "dependencies": {
-    "@xapp/question-answering-handler": "2.0.7",
+    "@xapp/question-answering-handler": "2.0.8",
     "@xapp/stentor-alexa": "1.40.47",
     "@xapp/stentor-dialogflow": "1.40.47",
     "@xapp/stentor-lex-connect": "1.40.47",
