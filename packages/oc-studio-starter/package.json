@@ -17,7 +17,7 @@
     "node": "^12 || ^14 || ^16"
   },
   "devDependencies": {
-    "@babel/core": "7.17.2",
+    "@babel/core": "7.17.5",
     "@babel/preset-env": "7.16.11",
     "@babel/preset-typescript": "7.16.7",
     "@types/chai": "4.3.0",
@@ -25,27 +25,27 @@
     "@types/node": "14.18.10",
     "@types/sinon": "10.0.6",
     "@types/sinon-chai": "3.2.8",
-    "@typescript-eslint/eslint-plugin": "5.12.0",
-    "@typescript-eslint/parser": "5.12.0",
+    "@typescript-eslint/eslint-plugin": "5.12.1",
+    "@typescript-eslint/parser": "5.12.1",
     "@xapp/config": "0.2.3",
-    "aws-sdk": "2.1074.0",
+    "aws-sdk": "2.1082.0",
     "babel-loader": "8.2.3",
     "babel-preset-minify": "0.5.1",
-    "body-parser": "1.19.1",
+    "body-parser": "1.19.2",
     "cache-loader": "4.1.0",
     "chai": "4.3.4",
-    "eslint": "8.9.0",
+    "eslint": "8.10.0",
     "eslint-plugin-notice": "0.9.10",
     "express": "4.17.2",
-    "fork-ts-checker-webpack-plugin": "6.5.0",
+    "fork-ts-checker-webpack-plugin": "7.2.1",
     "mocha": "8.4.0",
     "nodemon": "2.0.15",
-    "sinon": "12.0.1",
+    "sinon": "13.0.1",
     "sinon-chai": "3.7.0",
     "ts-node": "10.5.0",
     "typescript": "4.5.5",
-    "webpack": "5.68.0",
-    "webpack-cli": "4.9.1",
+    "webpack": "5.69.1",
+    "webpack-cli": "4.9.2",
     "webpack-node-externals": "3.0.0"
   },
   "scripts": {
@@ -58,13 +58,13 @@
     "test": "exit 0"
   },
   "dependencies": {
-    "@xapp/question-answering-handler": "2.0.8",
-    "@xapp/stentor-alexa": "1.40.47",
-    "@xapp/stentor-dialogflow": "1.40.47",
-    "@xapp/stentor-lex-connect": "1.40.47",
-    "@xapp/stentor-lex-v2": "1.40.47",
-    "stentor": "1.52.17",
-    "stentor-channel": "1.52.17",
-    "stentor-user-storage-dynamo": "1.52.15"
+    "@xapp/question-answering-handler": "2.0.10",
+    "@xapp/stentor-alexa": "1.40.59",
+    "@xapp/stentor-dialogflow": "1.40.58",
+    "@xapp/stentor-lex-connect": "1.40.58",
+    "@xapp/stentor-lex-v2": "1.40.58",
+    "stentor": "1.52.25",
+    "stentor-channel": "1.52.25",
+    "stentor-user-storage-dynamo": "1.52.22"
   }
 }
