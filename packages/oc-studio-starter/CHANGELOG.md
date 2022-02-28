@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.5](https://github.com/xapp-ai/oc-studio-starter/compare/v1.2.4...v1.2.5) (2022-02-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @xapp/question-answering-handler to v2.0.10 ([#1006](https://github.com/xapp-ai/oc-studio-starter/issues/1006)) ([576c115](https://github.com/xapp-ai/oc-studio-starter/commit/576c115a80c53c5571678e0e473cb2a5d25282d9))
+* **deps:** update dependency @xapp/question-answering-handler to v2.0.7 ([#959](https://github.com/xapp-ai/oc-studio-starter/issues/959)) ([3cbdea7](https://github.com/xapp-ai/oc-studio-starter/commit/3cbdea74f6fdbf94a0915a35ebd3c206a443082a))
+* **deps:** update dependency @xapp/stentor-alexa to v1.40.44 ([771f077](https://github.com/xapp-ai/oc-studio-starter/commit/771f077fedf388aeb6cc2a5b9f08f16f9e780ff7))
+* **deps:** update dependency @xapp/stentor-alexa to v1.40.59 ([96bc547](https://github.com/xapp-ai/oc-studio-starter/commit/96bc547b057190364729483152e46021d5904d11))
+* **deps:** update dependency @xapp/stentor-dialogflow to v1.39.63 ([ef48ea8](https://github.com/xapp-ai/oc-studio-starter/commit/ef48ea898b590e7f96f228a440eefad1a5fdeae5))
+* **deps:** update dependency @xapp/stentor-dialogflow to v1.40.42 ([795b471](https://github.com/xapp-ai/oc-studio-starter/commit/795b47185610ba99ee2135c6b1eead7c7ced7953))
+* **deps:** update dependency stentor to v1.50.27 ([c4f24fb](https://github.com/xapp-ai/oc-studio-starter/commit/c4f24fbfd4ae6ad434541ea2476d06188d91dcf0))
+* **deps:** update dependency stentor to v1.52.18 ([e96524a](https://github.com/xapp-ai/oc-studio-starter/commit/e96524a70a25c0465274c9ada4d715d9a428ccd9))
+* **deps:** update stentor ([afe8fb0](https://github.com/xapp-ai/oc-studio-starter/commit/afe8fb021ee29697adb1c2bea73c6d8b51dc4f2e))
+* **deps:** update stentor ([4169319](https://github.com/xapp-ai/oc-studio-starter/commit/4169319f8516fdfc950663e225fd360691baaeac))
+* **deps:** update stentor ([1209456](https://github.com/xapp-ai/oc-studio-starter/commit/12094562d5dd09a19892413c695889bb0276874a))
+* **deps:** update stentor ([c3d067c](https://github.com/xapp-ai/oc-studio-starter/commit/c3d067c4298cd02f3cdd86e401b726b23654a533))
+* **deps:** update stentor ([b8f7c7c](https://github.com/xapp-ai/oc-studio-starter/commit/b8f7c7c20451a6251bff1c3056416b6817322522))
+* **deps:** update stentor ([05dbce6](https://github.com/xapp-ai/oc-studio-starter/commit/05dbce60a0bdf4881f3accec38dfd60f61d540cc))
+* **deps:** update stentor ([e692e87](https://github.com/xapp-ai/oc-studio-starter/commit/e692e870f864c7fe86b64e268791b3618e970931))
+* **deps:** update stentor ([4ff98f4](https://github.com/xapp-ai/oc-studio-starter/commit/4ff98f44fb0b34290840d51e1787c478c4ee6189))
+* **deps:** update stentor ([38f9d4a](https://github.com/xapp-ai/oc-studio-starter/commit/38f9d4a1f210fdcecc40568e577d4822f79811a9))
+* **deps:** update stentor ([7f757d4](https://github.com/xapp-ai/oc-studio-starter/commit/7f757d416135aaaa5b9d1c94d9cb21bc68ae7482))
+* **deps:** update stentor ([014a8e1](https://github.com/xapp-ai/oc-studio-starter/commit/014a8e101f2cb7757e5bac7aae0937ee122fedf1))
+* **deps:** update stentor ([504d5dc](https://github.com/xapp-ai/oc-studio-starter/commit/504d5dc692930a8662c249d1f7b920e7df60b931))
+* **deps:** update stentor ([d12adab](https://github.com/xapp-ai/oc-studio-starter/commit/d12adabdf7efb6d8d7ea07e68e57c95ab2e7c6b8))
+* **deps:** update stentor ([4fb11ec](https://github.com/xapp-ai/oc-studio-starter/commit/4fb11ec6b4370e50dea5df58b8edcc5437e50d55))
+* **deps:** update stentor ([#1004](https://github.com/xapp-ai/oc-studio-starter/issues/1004)) ([672cb3c](https://github.com/xapp-ai/oc-studio-starter/commit/672cb3cf0390188cf4fcb6328093d440afab210a))
+* **deps:** update stentor to v1.39.67 ([72f1d72](https://github.com/xapp-ai/oc-studio-starter/commit/72f1d724b316424630b945d8364977e2f4572350))
+* **deps:** update stentor to v1.40.32 ([24f7039](https://github.com/xapp-ai/oc-studio-starter/commit/24f7039643bd0214c8be18972ac9b0d925bb9c1c))
+* **deps:** update stentor to v1.40.34 ([3dff027](https://github.com/xapp-ai/oc-studio-starter/commit/3dff0277a547469a0f3e6fafd8ead272b931cf9f))
+* **deps:** update stentor to v1.40.35 ([85c6fe3](https://github.com/xapp-ai/oc-studio-starter/commit/85c6fe35493a30e182a0df937535df5801aff88d))
+* **deps:** update stentor to v1.40.36 ([7383c40](https://github.com/xapp-ai/oc-studio-starter/commit/7383c4070b457c146e7727f41cd5b066880f135f))
+* **deps:** update stentor to v1.40.41 ([1a19691](https://github.com/xapp-ai/oc-studio-starter/commit/1a19691d50a78c778cdc8c1f537976030afeaba9))
+* **deps:** update stentor to v1.40.47 ([d1a3252](https://github.com/xapp-ai/oc-studio-starter/commit/d1a3252b9689e00888fe92f44904adc77bd55937))
+* **deps:** update stentor to v1.40.50 ([0f5a4e5](https://github.com/xapp-ai/oc-studio-starter/commit/0f5a4e5353831f9d4b9e2741644e79853321aff5))
+* **deps:** update stentor to v1.40.52 ([20e03de](https://github.com/xapp-ai/oc-studio-starter/commit/20e03deb8f2400cab01430534ce5debbdb128f76))
+* **deps:** update stentor to v1.40.55 ([a194b17](https://github.com/xapp-ai/oc-studio-starter/commit/a194b171a64278f1d8200ee79f62163593ab6ddb))
+* **deps:** update stentor to v1.40.58 ([36b97f5](https://github.com/xapp-ai/oc-studio-starter/commit/36b97f50d34a628ec11f725006a48bfd1cc151ae))
+* **deps:** update stentor to v1.52.11 ([a89e442](https://github.com/xapp-ai/oc-studio-starter/commit/a89e44264e94e85fa6d5e7a338480d4b52e8827b))
+* **deps:** update stentor to v1.52.12 ([8279a64](https://github.com/xapp-ai/oc-studio-starter/commit/8279a6402b859d915d496f53763bfa3b608d4b37))
+* **deps:** update stentor to v1.52.15 ([4f1fdf5](https://github.com/xapp-ai/oc-studio-starter/commit/4f1fdf5620bd95ddd5853848538839bb8c7c8c2f))
+* **deps:** update stentor to v1.52.17 ([6d96a5f](https://github.com/xapp-ai/oc-studio-starter/commit/6d96a5ff0ebcd1da470613c704036ace8dad90f0))
+* **deps:** update stentor to v1.52.19 ([fe604a0](https://github.com/xapp-ai/oc-studio-starter/commit/fe604a08f95e5fb53a78c8e4d0fcb69499d20180))
+* **deps:** update stentor to v1.52.25 ([#1013](https://github.com/xapp-ai/oc-studio-starter/issues/1013)) ([ceea908](https://github.com/xapp-ai/oc-studio-starter/commit/ceea908a46383e1d3b6e5edd32f2a5c0bb2910ff))
+* node 14 ([#1014](https://github.com/xapp-ai/oc-studio-starter/issues/1014)) ([fbf10e4](https://github.com/xapp-ai/oc-studio-starter/commit/fbf10e417a21458474b208ff7d01f94ffd705253))
+* Node 16 support ([#990](https://github.com/xapp-ai/oc-studio-starter/issues/990)) ([b3872fe](https://github.com/xapp-ai/oc-studio-starter/commit/b3872fe0bdb3024905498329409812c63c4b4695))
+
+
+
+
+
 ## [1.2.4](https://github.com/xapp-ai/oc-studio-starter/compare/v1.2.3...v1.2.4) (2022-01-18)
 
 

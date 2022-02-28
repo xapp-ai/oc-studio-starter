@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.5](https://github.com/xapp-ai/oc-studio-starter/compare/v1.2.4...v1.2.5) (2022-02-28)
+
+
+### Bug Fixes
+
+* Adds "bye" as an utterance to ByeIntent ([#981](https://github.com/xapp-ai/oc-studio-starter/issues/981)) ([4237031](https://github.com/xapp-ai/oc-studio-starter/commit/4237031c1ae85556fb2c53379fd426b04e5804fa))
+* Node 16 support ([#990](https://github.com/xapp-ai/oc-studio-starter/issues/990)) ([b3872fe](https://github.com/xapp-ai/oc-studio-starter/commit/b3872fe0bdb3024905498329409812c63c4b4695))
+
+
+
+
+
 ## [1.2.4](https://github.com/xapp-ai/oc-studio-starter/compare/v1.2.3...v1.2.4) (2022-01-18)
 
 **Note:** Version bump only for package @xapp/oc-studio-starter-template
