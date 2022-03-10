@@ -1,8 +1,5 @@
 {
-  "extends": [
-    "config:base",
-    "schedule:daily"
-  ],
+  "extends": ["config:base", "schedule:daily"],
   "statusCheckVerify": true,
   "packageRules": [
     {
@@ -11,8 +8,8 @@
       "automerge": true
     },
     {
-      "packagePatterns": [ "stentor" ],
-      "groupName": "stentor",
+      "packagePatterns": ["stentor", "@xapp"],
+      "groupName": "@xapp/stentor",
       "schedule": null,
       "automerge": true
     }
