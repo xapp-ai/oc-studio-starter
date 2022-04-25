@@ -2735,20 +2735,20 @@
     lodash.invert "4.3.0"
     moment "2.29.3"
 
-"@xapp/stentor-app@1.40.147":
-  version "1.40.147"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-app/-/stentor-app-1.40.147.tgz#09d2fc3544c9bc0849d66acf108b0cac195945c7"
-  integrity sha512-8Q7zq47u4SMiEkguyofEJGwi38Yz1Bf2NHmjSZ0EV3pshr7mbjiQWMOOzdpj6joZLp6ybe80hdC1Hkxp8JP6Qg==
+"@xapp/stentor-app@1.40.148":
+  version "1.40.148"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-app/-/stentor-app-1.40.148.tgz#94a03cb0801665eba36ea0077072f78b61e03ae8"
+  integrity sha512-XcXA5AiiMeKJVY7GFkLc/XB15nSfj82i2I2+dhtSRaBkaz9pcY8NMWG8bQjI6hiCATV79xwk78fKhGKP4hCrOA==
 
-"@xapp/stentor-dialogflow@1.40.147":
-  version "1.40.147"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-dialogflow/-/stentor-dialogflow-1.40.147.tgz#f1ee0815d95cfb59a0be8f7d2f99e4b9688af544"
-  integrity sha512-q1jj2JUi/SpAvaC8kM4QRSWY+JmvN+dSUWnj3VXgLvT2bhkSGWaKEq33sctVCwyAk0zIGPfYeFLiQAY2dAtXog==
+"@xapp/stentor-dialogflow@1.40.148":
+  version "1.40.148"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-dialogflow/-/stentor-dialogflow-1.40.148.tgz#f6e235b5752f36235158626890c62938a71dd65c"
+  integrity sha512-hQ8TLtqS8qOr11ziaOWptXDymPPSRoGQcshdWdmnJFVngHDzJbEm0zJYWWfEnbCyGYFkzc3DHopXDW4GGW9J8w==
   dependencies:
     "@types/dialogflow" "1.0.0"
     "@xapp/patterns" "1.40.139"
     "@xapp/stentor-actions-on-google" "1.40.147"
-    "@xapp/stentor-app" "1.40.147"
+    "@xapp/stentor-app" "1.40.148"
     actions-on-google "2.14.0"
     dialogflow "1.2.0"
 
@@ -9739,10 +9739,10 @@ stentor-service-ovai@1.55.7:
     stentor-service-event "1.55.7"
     stentor-utils "1.55.7"
 
-stentor-service-studio@1.55.7:
-  version "1.55.7"
-  resolved "https://registry.yarnpkg.com/stentor-service-studio/-/stentor-service-studio-1.55.7.tgz#2a18bff90bcf7d0a81c96d78298700e7d4981197"
-  integrity sha512-aOKohOUShC2a8NNmtwhU0xiRfp6gXTv/QD56uvsR9zs7o6Fxg7MqGoSt/2Zeb9gWOl1eqKWFAxFi6XBoxq1h/g==
+stentor-service-studio@1.55.8:
+  version "1.55.8"
+  resolved "https://registry.yarnpkg.com/stentor-service-studio/-/stentor-service-studio-1.55.8.tgz#cd0c0f757c17da9a90606d24ca61dce945ac4c0d"
+  integrity sha512-gFDVyD7ZFHwM3B7BTSosIPanBUiOxOc4eFKaGn1c/weXyoNzgwaeCGWBU6Vh0RAeNc/ClQGDHT0J59CaBbC24A==
   dependencies:
     isomorphic-fetch "3.0.0"
     stentor-constants "1.55.7"
@@ -9806,10 +9806,10 @@ stentor-utils@1.55.7:
     words-to-numbers "1.5.1"
     xmldoc "1.1.2"
 
-stentor@1.55.7:
-  version "1.55.7"
-  resolved "https://registry.yarnpkg.com/stentor/-/stentor-1.55.7.tgz#947c81438dd71e7f493aa2eab3d026438d956690"
-  integrity sha512-V0prpE3D9QAdKaO+kB6j5Jaxi0j9ICp0dxN8RItwkT/lZeikOl58GeP9cYNByj+8vTNPhVyvwpef6NyYQBWbVg==
+stentor@1.55.8:
+  version "1.55.8"
+  resolved "https://registry.yarnpkg.com/stentor/-/stentor-1.55.8.tgz#fcaa9c097d4b30b1d2d3afd72615eff2563298d6"
+  integrity sha512-6WZIhdRD06/tBebYBofNSKPO6iInFgpMR3t6BxC0aOUUbVA8nhP6UNvMtqVwPOP6P8r84dWDValGzjFq9PTynw==
   dependencies:
     "@types/aws-lambda" "8.10.95"
     "@types/body-parser" "1.19.2"
@@ -9830,7 +9830,7 @@ stentor@1.55.7:
     stentor-runtime "1.55.7"
     stentor-service-event "1.55.7"
     stentor-service-ovai "1.55.7"
-    stentor-service-studio "1.55.7"
+    stentor-service-studio "1.55.8"
     stentor-utils "1.55.7"
 
 stream-combiner2@~1.1.1:
