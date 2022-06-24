@@ -2,6 +2,7 @@
   "content": {
     "OCSearch": [
       {
+        "tag": "KB_TOP_FAQ",
         "conditions": "!!session('TOP_FAQ')",
         "outputSpeech": {
           "displayText": "${TOP_FAQ.markdownText}\n\nAny other questions?",
@@ -19,6 +20,7 @@
         }
       },
       {
+        "tag": "KB_TOP_ANSWER",
         "conditions": "!!session('TOP_ANSWER') && !session('TOP_FAQ')",
         "outputSpeech": {
           "displayText": "${TOP_ANSWER.markdownText}\n\nAny other questions?",
@@ -36,6 +38,7 @@
         }
       },
       {
+        "tag": "KB_SUGGESTED_ANSWER",
         "conditions": "!${$.request.device.canSpeak} && !!session('SUGGESTED_ANSWER') && !session('TOP_ANSWER') && !session('TOP_FAQ')",
         "outputSpeech": {
           "displayText": "Here is what I found...\n\"${SUGGESTED_ANSWER.markdownText}\"\nAny other questions?",
@@ -78,6 +81,7 @@
             ]
           }
         ],
+        "tag": "KB_LIST_OF_RESULTS",
         "conditions": "!${$.request.device.canSpeak} && !!session('SEARCH_RESULTS') && !session('SUGGESTED_ANSWER') && !session('TOP_ANSWER') && !session('TOP_FAQ')",
         "outputSpeech": {
           "displayText": "Sorry, I’m not sure I understood that.  I’m still learning…\nThe articles below may help.",
@@ -85,6 +89,7 @@
         }
       },
       {
+        "tag": "KB_NO_ANSWER",
         "outputSpeech": {
           "displayText": "I'm sorry, I don't know that one. What else can I help you with?",
           "ssml": "<speak>I'm sorry, I don't know that one. What else can I help you with?</speak>"
