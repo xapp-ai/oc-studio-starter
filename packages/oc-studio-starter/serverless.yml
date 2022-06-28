@@ -1,0 +1,101 @@
+# serverless.yml
+# Note: Change this to avoid collisions
+service: stentor-starter
+
+custom:
+  myEnvironment:
+    STENTOR_USER_TABLE_NAME: ${self:service}-user-${sls:stage}
+    SECRET_NAME: ${self:service}-${sls:stage}
+
+plugins:
+  - serverless-plugin-common-excludes
+
+package:
+  excludeDevDependencies: true
+  exclude:
+    - .env
+    - .github/**
+    - dist/**/*.d.ts
+    - dist/**/*.js.map
+    - resources/**
+    - src/**
+    - temp/**
+    - widget/**
+    - yarn.lock
+    - node_modules/aws-sdk/**
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  region: us-east-1
+  stackName: ${self:service}-${sls:stage}
+  profile: ${env:AWS_PROFILE}
+  timeout: 15
+  environment:
+    NODE_ENV: ${sls:stage}
+    SECRET_NAME: ${self:custom.myEnvironment.SECRET_NAME}}
+
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      Resource:
+        - "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:custom.myEnvironment.STENTOR_USER_TABLE_NAME}"
+    - Effect: Allow
+      Action:
+        - logs:*
+      Resource: "arn:aws:logs:*:*:*"
+    - Effect: Allow
+      Action:
+        - secretsmanager:GetSecretValue
+      Resource: "arn:aws:secretsmanager:*:*:secret:*"
+    - Effect: Allow
+      Action:
+        - s3:*
+      Resource: "arn:aws:s3:::*"
+
+functions:
+  app:
+    handler: dist/index.handler
+    events:
+      - http:
+          method: POST
+          path: /
+          cors: true
+      - http:
+          method: POST
+          path: /{proxy+}
+          cors: true
+
+resources:
+  Resources:
+    Secrets:
+      Type: "AWS::SecretsManager::Secret"
+      Properties:
+        Name: ${self:custom.myEnvironment.SECRET_NAME}
+        Description: Super secret runtime
+        SecretString: '{"STUDIO_TOKEN":""}'
+    UserTable:
+      Type: "AWS::DynamoDB::Table"
+      DeletionPolicy: Retain
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: userId
+            AttributeType: S
+          - AttributeName: appId
+            AttributeType: S
+        KeySchema:
+          - AttributeName: userId
+            KeyType: HASH
+          - AttributeName: appId
+            KeyType: RANGE
+        ProvisionedThroughput:
+          ReadCapacityUnits: 5
+          WriteCapacityUnits: 5
+        TableName: ${self:custom.myEnvironment.STENTOR_USER_TABLE_NAME}

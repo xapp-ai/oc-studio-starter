@@ -19,6 +19,9 @@ import { DynamoUserStorage } from "stentor-user-storage-dynamo";
 // Custom Handlers
 import { QuestionAnsweringHandler } from "@xapp/question-answering-handler";
 
+
+// If MULTI_TENANT
+
 // Return the handler for running in an AWS Lambda function.
 export const handler = new Assistant()
     .withUserStorage(new DynamoUserStorage())
