@@ -2828,10 +2828,10 @@
     ask-sdk-model "1.38.3"
     lodash.invert "4.3.0"
 
-"@xapp/stentor-alexa@1.40.211":
-  version "1.40.211"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-alexa/-/stentor-alexa-1.40.211.tgz#6edec510f348c3c58f0b9c34cdeaed79996434ed"
-  integrity sha512-PE3jj8dQqWcreiKM1G/1kBGyT/3BacHxG+xs0YY6LyCm4MDpE9BOgKjjBE8NP44JCUlFE9IXL4T8I2BiMOzNEw==
+"@xapp/stentor-alexa@1.40.214":
+  version "1.40.214"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-alexa/-/stentor-alexa-1.40.214.tgz#06977a84991f6dfd08074b4ba4b0f9f2526a5d9c"
+  integrity sha512-72JpEK3j4/4bt1J91b6NQg8Ua/2IqWuEI0o/d7eF6dW7aEW2sBLbPKPSWuek2CQeUgZ/9BHSsD3ptfrsAIZm3w==
   dependencies:
     "@xapp/patterns" "1.40.197"
     "@xapp/stentor-alexa-lib" "1.40.209"
@@ -2861,42 +2861,42 @@
     actions-on-google "2.14.0"
     dialogflow "1.2.0"
 
-"@xapp/stentor-lex-connect@1.40.212":
-  version "1.40.212"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-lex-connect/-/stentor-lex-connect-1.40.212.tgz#dc7d17c872f131300f775a5b2afb4c812e36fc3d"
-  integrity sha512-JdMFGMmFbtHohg5b4FzbaA9zsZP5IYBk9G4r9TZxUzGN+kZ3Wc5b60eb2PvFT05SYuzc0PB3p5uVsNq2NcO2fw==
+"@xapp/stentor-lex-connect@1.40.214":
+  version "1.40.214"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-lex-connect/-/stentor-lex-connect-1.40.214.tgz#1ae37d48b3b791c5f3bb89c7ea3bc322c573d4cf"
+  integrity sha512-06AkZ+enqjvIueIr+v84PM6joSczMoSKNThuKVSTH/58hyDeKwdhrwq4q9oQr2uSCUTkTXCQi34lCn1Lzx01VA==
   dependencies:
     "@xapp/patterns" "1.40.197"
     "@xapp/stentor-alexa-lib" "1.40.209"
-    "@xapp/stentor-lex-lib" "1.40.212"
+    "@xapp/stentor-lex-lib" "1.40.214"
     actions-on-google "2.14.0"
 
-"@xapp/stentor-lex-lib@1.40.212":
-  version "1.40.212"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-lex-lib/-/stentor-lex-lib-1.40.212.tgz#a44b3bd350b2c35c2cc27279bab94385f21659b1"
-  integrity sha512-7uCCRjvUzY38/lY6c0EGD9IuP4mXMStDlBjU08r5RZdLkUZrxmO/VRC2rvbHOXfb+Tl4/kHGR8hzpqQHSdw6ug==
+"@xapp/stentor-lex-lib@1.40.214":
+  version "1.40.214"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-lex-lib/-/stentor-lex-lib-1.40.214.tgz#6a4b55a54be61a8389a39d5cb0d6f4e46aadbb78"
+  integrity sha512-wc/Cmb/TqOfeUKQYBvXbQNQ9q8jVCl1+CeZfBpx7ej77oaH+64GrjzGNv/OvxXpzQ6g9ozMMPC3kHlSvXZOnvQ==
   dependencies:
     "@xapp/stentor-alexa-lib" "1.40.209"
     lodash.merge "4.6.2"
 
-"@xapp/stentor-lex-v2@1.40.212":
-  version "1.40.212"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-lex-v2/-/stentor-lex-v2-1.40.212.tgz#f741f30750965e1bf1fb98784fd0529567630593"
-  integrity sha512-MEUoeSMUAmZLSG4dXoCwroZm+BrfFoVctDWtBoboJ383agjBoZtrMd4qJznUvy8zXq550omySY5YFscb6X5h3Q==
+"@xapp/stentor-lex-v2@1.40.214":
+  version "1.40.214"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-lex-v2/-/stentor-lex-v2-1.40.214.tgz#5f6aa16ef139bea5bdb1c5f6c0511228a63a62fd"
+  integrity sha512-338PD0iGGc5/G10iruEVxOBxCfzPMpwikn0T3op6yEenSiIpQe2naJf8kA1ea1d3yfck4dOmwa9pSconC26/fQ==
   dependencies:
     "@xapp/patterns" "1.40.197"
     "@xapp/stentor-alexa-lib" "1.40.209"
-    "@xapp/stentor-lex-lib" "1.40.212"
-    "@xapp/stentor-service-lex" "1.40.212"
+    "@xapp/stentor-lex-lib" "1.40.214"
+    "@xapp/stentor-service-lex" "1.40.214"
     actions-on-google "2.14.0"
 
-"@xapp/stentor-service-lex@1.40.212":
-  version "1.40.212"
-  resolved "https://registry.yarnpkg.com/@xapp/stentor-service-lex/-/stentor-service-lex-1.40.212.tgz#7349ddbe6975e25365ad9d705522f77da01249fa"
-  integrity sha512-CyHUuNNZYQM0n1UMxthy1QiBGVhgBpL1msk2SWeNh03oMixmc4sH8I1dT+i6N8R2VBVr19KtN9AWJTdipzUKxw==
+"@xapp/stentor-service-lex@1.40.214":
+  version "1.40.214"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-service-lex/-/stentor-service-lex-1.40.214.tgz#5d488bfce05b48eeb993992a97f565573fa1fe3d"
+  integrity sha512-U+LJ6RZ3ggxUd+G2vy8HfrJB54y7vDAKK8NSklCgxuY2nd6vpTHElm0b4OCmo711fIC1fN1Gxyg5zyo/JoL6cw==
   dependencies:
     "@xapp/stentor-alexa-lib" "1.40.209"
-    "@xapp/stentor-lex-lib" "1.40.212"
+    "@xapp/stentor-lex-lib" "1.40.214"
     lodash.merge "4.6.2"
     stentor-handler "1.56.14"
     stentor-history "1.56.12"
