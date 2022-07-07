@@ -1,11 +1,14 @@
 # serverless.yml
 # Note: Change this to avoid collisions
-service: stentor-starter
+service: studio-runtime
+
+useDotenv: true
 
 custom:
   myEnvironment:
-    STENTOR_USER_TABLE_NAME: ${self:service}-user-${sls:stage}
-    SECRET_NAME: ${self:service}-${sls:stage}
+    APP_ID: ${env:STUDIO_APP_ID, "appId"}
+    STENTOR_USER_TABLE_NAME: ${self:custom.myEnvironment.APP_ID}-user-${sls:stage}
+    SECRET_NAME: ${self:custom.myEnvironment.APP_ID}-secrets-${sls:stage}
 
 plugins:
   - serverless-plugin-common-excludes
@@ -29,13 +32,14 @@ provider:
   runtime: nodejs14.x
   stage: dev
   region: us-east-1
-  stackName: ${self:service}-${sls:stage}
+  stackName: ${self:custom.myEnvironment.APP_ID}-${sls:stage}
   profile: ${env:AWS_PROFILE}
   timeout: 15
   environment:
     NODE_ENV: ${sls:stage}
-    SECRET_NAME: ${self:custom.myEnvironment.SECRET_NAME}}
-
+    SECRET_NAME: ${self:custom.myEnvironment.SECRET_NAME}
+    USER_STORAGE_TABLE: ${self:custom.myEnvironment.STENTOR_USER_TABLE_NAME}
+    STUDIO_APP_ID: ${self:custom.myEnvironment.APP_ID}
   iamRoleStatements:
     - Effect: Allow
       Action:
@@ -62,7 +66,7 @@ provider:
 
 functions:
   app:
-    handler: dist/index.handler
+    handler: lib/index.handler
     events:
       - http:
           method: POST
@@ -80,7 +84,7 @@ resources:
       Properties:
         Name: ${self:custom.myEnvironment.SECRET_NAME}
         Description: Super secret runtime
-        SecretString: '{"STUDIO_TOKEN":""}'
+        SecretString: '{"STUDIO_TOKEN":"update with your token here"}'
     UserTable:
       Type: "AWS::DynamoDB::Table"
       DeletionPolicy: Retain
