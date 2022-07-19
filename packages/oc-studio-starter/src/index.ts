@@ -24,13 +24,12 @@ import { StudioService } from "stentor-service-studio";
 import { QuestionAnsweringHandler } from "@xapp/question-answering-handler";
 
 // Leverage external NLU
-
 const nlu = new LexServiceV2({
     botId: process.env.LEX_BOT_ID,
     botAlias: process.env.LEX_BOT_ALIAS
 });
 
-const studioService: StudioService = new StudioService({ appId: process.env.STUDIO_APP_ID, token: "placeholder" });
+const studioService: StudioService = new StudioService({ appId: process.env.STUDIO_APP_ID, token: process.env.STUDIO_TOKEN });
 
 // Return the handler for running in an AWS Lambda function.
 export const handler = new Assistant()
