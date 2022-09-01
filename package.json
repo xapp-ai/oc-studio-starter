@@ -1,9 +1,14 @@
 {
   "private": true,
   "repository": "github:xapp-ai/oc-studio-starter",
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**"
+    ]
+  },
   "devDependencies": {
     "@xapp/config": "0.2.3",
     "lerna": "5.2.0",
