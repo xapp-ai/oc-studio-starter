@@ -8,7 +8,7 @@ custom:
   myEnvironment:
     APP_ID: ${env:STUDIO_APP_ID, "appId"}
     STENTOR_USER_TABLE_NAME: ${self:custom.myEnvironment.APP_ID}-user-${sls:stage}
-    SECRET_NAME: ${self:custom.myEnvironment.APP_ID}-secrets-${sls:stage}
+    STUDIO_SECRET_NAME: ${self:custom.myEnvironment.APP_ID}-secrets-${sls:stage}
 
 plugins:
   - serverless-plugin-common-excludes
@@ -38,7 +38,7 @@ provider:
   timeout: 15
   environment:
     NODE_ENV: ${sls:stage}
-    SECRET_NAME: ${self:custom.myEnvironment.SECRET_NAME}
+    SECRET_NAME: ${self:custom.myEnvironment.STUDIO_SECRET_NAME}
     USER_STORAGE_TABLE: ${self:custom.myEnvironment.STENTOR_USER_TABLE_NAME}
     STUDIO_APP_ID: ${self:custom.myEnvironment.APP_ID}
   iamRoleStatements:
@@ -83,7 +83,7 @@ resources:
     Secrets:
       Type: "AWS::SecretsManager::Secret"
       Properties:
-        Name: ${self:custom.myEnvironment.SECRET_NAME}
+        Name: ${self:custom.myEnvironment.STUDIO_SECRET_NAME }
         Description: Super secret runtime
         SecretString: '{"STUDIO_TOKEN":"update with your token here"}'
     UserTable:
