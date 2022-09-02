@@ -1,13 +1,18 @@
 {
   "private": true,
   "repository": "github:xapp-ai/oc-studio-starter",
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**"
+    ]
+  },
   "devDependencies": {
     "@xapp/config": "0.2.3",
-    "lerna": "4.0.0",
-    "semantic-release": "19.0.5"
+    "lerna": "5.2.0",
+    "semantic-release": "19.0.3"
   },
   "scripts": {
     "lerna": "lerna",
@@ -17,6 +22,7 @@
     "lint": "lerna run lint",
     "build": "lerna run build",
     "test": "TZ=UTC lerna run test",
+    "deploy:prod": "lerna run deploy:prod",
     "release": "lerna version --yes && git push origin --tags && lerna publish from-git --yes"
   }
 }
