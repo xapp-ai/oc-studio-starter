@@ -3,9 +3,9 @@ import { PasswordRequest } from "@xapp/oc-studio-starter-models";
 import React, { FC, FormEvent, useCallback, useState } from "react";
 import { PasswordInput } from "./PasswordInput";
 
-export type PasswordFormProps = MessageMiddlewareProps;
+export type PasswordContainerProps = MessageMiddlewareProps;
 
-export const PasswordForm: FC<PasswordFormProps> = props => {
+export const PasswordContainer: FC<PasswordContainerProps> = props => {
     const { ctx } = props;
 
     const [pwd, setPwd] = useState<string>("");

@@ -1,1 +1,1 @@
-export { PasswordInput, PasswordForm, PasswordFormProps, PasswordInputProps } from "./Password";
+export { PasswordInput, PasswordContainer, PasswordContainerProps, PasswordInputProps } from "./Password";

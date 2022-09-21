@@ -1,6 +1,7 @@
 {
   "extends": ["config:base", "schedule:daily"],
   "statusCheckVerify": true,
+  "ignoreDeps": ["style-loader", "css-loader"],
   "packageRules": [
     {
       "depTypeList": ["devDependencies"],
