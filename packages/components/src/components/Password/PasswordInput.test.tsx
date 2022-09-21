@@ -1,3 +1,4 @@
+/*! Copyright (c) 2022, XAPP AI */
 import { shallow } from "enzyme";
 import React from 'react';
 import { PasswordInput } from "./PasswordInput";

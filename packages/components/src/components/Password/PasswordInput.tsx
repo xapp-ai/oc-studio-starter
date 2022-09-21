@@ -1,3 +1,4 @@
+/*! Copyright (c) 2022, XAPP AI */
 import React, { ChangeEvent, FC, useCallback } from "react";
 import styles from "./Password.scss";
 

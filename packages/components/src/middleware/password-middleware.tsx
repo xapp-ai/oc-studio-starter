@@ -1,3 +1,4 @@
+/*! Copyright (c) 2022, XAPP AI */
 import { MessageMiddlewareBuilder } from "@xapp/chat-widget";
 import React from "react";
 import { PasswordContainer } from "../components";

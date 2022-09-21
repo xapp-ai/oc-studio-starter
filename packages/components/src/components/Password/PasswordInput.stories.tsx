@@ -1,3 +1,4 @@
+/*! Copyright (c) 2022, XAPP AI */
 /*! Copyright (c) 2022, Independence Blue Cross */
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';

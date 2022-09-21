@@ -1,3 +1,4 @@
+/*! Copyright (c) 2022, XAPP AI */
 import { ChatMessagePart, ChatMessageRequestCustom, MessageMiddlewareProps } from "@xapp/chat-widget";
 import { PasswordRequest } from "@xapp/oc-studio-starter-models";
 import React, { FC, FormEvent, useCallback, useState } from "react";
