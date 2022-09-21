@@ -9,3 +9,11 @@ AWS_REGION=us-east-1
 STUDIO_APP_ID=
 USER_STORAGE_TABLE=
 ```
+
+## Packages
+
+### app/
+
+The app directory contains the assistant's runtime.
+
+###

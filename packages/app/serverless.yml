@@ -67,6 +67,7 @@ provider:
 
 functions:
   app:
+    name: studio-runtime-${self:custom.myEnvironment.APP_ID}-${sls:stage}
     handler: lib/index.handler
     events:
       - http:

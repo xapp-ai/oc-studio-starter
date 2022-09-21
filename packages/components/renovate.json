@@ -1,0 +1,18 @@
+{
+  "extends": ["config:base", "schedule:daily"],
+  "ignoreDeps": ["sass-loader"],
+  "packageRules": [
+    {
+      "depTypeList": ["devDependencies"],
+      "updateTypes": ["minor"],
+      "automerge": true
+    },
+    {
+      "packagePatterns": ["stentor", "@xapp"],
+      "groupName": "@xapp/stentor",
+      "schedule": null,
+      "automerge": true
+    }
+  ],
+  "prConcurrentLimit": 3
+}
