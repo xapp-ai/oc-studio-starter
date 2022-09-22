@@ -1,19 +1,23 @@
 ## OC Studio Starter Template
 
-A starter template for OC Studio leveraging 📣 stentor conversational framework.
+A starter template repository for OC Studio leveraging 📣 stentor conversational framework.
 
-### Sample .env
+## Repository Structure
 
-```
-AWS_REGION=us-east-1
-STUDIO_APP_ID=
-USER_STORAGE_TABLE=
-```
+This is a monorepo with four main packages found under `/packages`.
 
-## Packages
+### App /packages/app
 
-### app/
+The main app that is deployed to an AWS Lambda. It is setup to communicate with OC Studio to retreive content and send events, use DynamoDB as your runtime database, and Lex V2 as your NLU.
 
-The app directory contains the assistant's runtime.
+### Components /packages/components
 
-###
+Custom components for extending the chat widget channel.
+
+### Models /packages/models
+
+Shared models across all the packages, specifically the app and components.
+
+### Template /packages/templates
+
+Starting point of content and interaction model.
