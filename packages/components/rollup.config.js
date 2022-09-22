@@ -1,5 +1,5 @@
+/*! Copyright (c) 2022, XAPP AI */
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
-/*! Copyright (c) 2022, Independence Blue Cross */
 import commonjs from "@rollup/plugin-commonjs";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import external from "rollup-plugin-peer-deps-external";
@@ -41,7 +41,7 @@ function iife(fileName) {
 
 const config = [
   {
-    input: "src/index.tsx",
+    input: "src/index.ts",
     output: [iife(`build/ibx-widget-middleware.js`)],
     plugins: plugins(),
   },
