@@ -1,5 +1,5 @@
 /*! Copyright (c) 2022, XAPP AI */
-
+import { PasswordDisplay, PASSWORD_DISPLAY_TYPE } from "@xapp/oc-studio-starter-models";
 import { AbstractHandler, Context, keyFromRequest, Request } from "stentor";
 
 
@@ -25,14 +25,14 @@ export class ChangePasswordHandler extends AbstractHandler {
 
         switch (key) {
             case this.intentId:
+
+                const display: PasswordDisplay = {
+                    type: PASSWORD_DISPLAY_TYPE
+                }
                 // Kick off the flow
-                context.response.say('Hello world!')
-                    .reprompt("The reprompt is used on voice channels when the user doesn't respond.")
-                    .withCard({
-                        type: "CARD",
-                        title: "Card",
-                        content: "This is an example of a card"
-                    });
+                context.response.say('Please enter your new password below.')
+                    .reprompt("Please enter your new password in the field.")
+                    .withDisplay(display);
                 // Exit from the flow
                 return;
             case 'HelpIntent':
