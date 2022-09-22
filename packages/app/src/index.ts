@@ -32,7 +32,7 @@ export async function handler(event: any, context: Context, callback: Callback<a
     // Leverage external NLU
     const nlu = new LexServiceV2({
         botId: process.env.LEX_BOT_ID,
-        botAlias: process.env.LEX_BOT_ALIAS
+        botAliasId: process.env.LEX_BOT_ALIAS_ID
     });
 
     const studioService: StudioService = new StudioService({ appId: process.env.STUDIO_APP_ID, token: process.env.STUDIO_TOKEN });

@@ -60,7 +60,7 @@
     "update:prod": "rimraf ./lib && yarn build && serverless deploy -f app --stage production",
     "deploy:staging": "rimraf ./lib && yarn build && serverless deploy --stage staging",
     "deploy:prod": "rimraf ./lib && yarn build && serverless deploy --stage production",
-    "express": "STENTOR_LOG_LEVEL=debug nodemon src/express.ts",
+    "start": "STENTOR_LOG_LEVEL=debug nodemon src/express.ts",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "test": "exit 0"
   },
