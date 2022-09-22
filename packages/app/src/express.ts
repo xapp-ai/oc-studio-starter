@@ -1,6 +1,6 @@
 /*! Copyright (c) 2020, XAPP AI */
 
-import { handler as stentorHandler } from "./index";
+import { handler } from "./index";
 
 const DEFAULT_PORT = 8080;
 const SERVER_PORT = process.env.PORT || DEFAULT_PORT;
@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 require("dotenv").config();
 
 app.post("/", async (request: any, response: any) => {
-    await stentorHandler(request.body, { request } as any, (whatever: any, stentorResponse: string) => {
+    await handler(request.body, { request } as any, (whatever: any, stentorResponse: string) => {
         response.send(stentorResponse);
     });
 });

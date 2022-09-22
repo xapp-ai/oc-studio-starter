@@ -38,9 +38,12 @@ provider:
   timeout: 15
   environment:
     NODE_ENV: ${sls:stage}
-    SECRET_NAME: ${self:custom.myEnvironment.STUDIO_SECRET_NAME}
+    STUDIO_SECRET_NAME: ${self:custom.myEnvironment.STUDIO_SECRET_NAME}
     USER_STORAGE_TABLE: ${self:custom.myEnvironment.STENTOR_USER_TABLE_NAME}
     STUDIO_APP_ID: ${self:custom.myEnvironment.APP_ID}
+    LEX_BOT_ID: ${env:LEX_BOT_ID, ""}
+    LEX_BOT_ALIAS_ID: ${env:LEX_BOT_ALIAS_ID, ""}
+    STENTOR_LOG_LEVEL: ${env:STENTOR_LOG_LEVEL, "info"}
   iamRoleStatements:
     - Effect: Allow
       Action:
@@ -64,9 +67,14 @@ provider:
       Action:
         - s3:*
       Resource: "arn:aws:s3:::*"
+    - Effect: Allow
+      Action:
+        - lex:*
+      Resource: "arn:aws:lex:*:*:*"
 
 functions:
   app:
+    name: studio-runtime-${self:custom.myEnvironment.APP_ID}-${sls:stage}
     handler: lib/index.handler
     events:
       - http:
@@ -85,7 +93,7 @@ resources:
       Properties:
         Name: ${self:custom.myEnvironment.STUDIO_SECRET_NAME }
         Description: Super secret runtime
-        SecretString: '{"STUDIO_TOKEN":"update with your token here"}'
+        SecretString: '{"STUDIO_TOKEN":"${env:STUDIO_TOKEN, "Replace_with_app_token"}"}'
     UserTable:
       Type: "AWS::DynamoDB::Table"
       DeletionPolicy: Retain
