@@ -25,6 +25,7 @@ import { StudioService } from "stentor-service-studio";
 
 // Custom Handlers
 import { QuestionAnsweringHandler } from "@xapp/question-answering-handler";
+import { ContactCaptureHandler } from "@xapp/contact-capture-handler";
 
 export async function handler(event: any, context: Context, callback: Callback<any>): Promise<void> {
     await setEnv().then().catch((error: Error) => console.error("Environment failed to load", error));
@@ -48,6 +49,7 @@ export async function handler(event: any, context: Context, callback: Callback<a
             setIntentId: "OCSearch"
         })
         .withHandlers({
+            ContactCaptureHandler: ContactCaptureHandler,
             QuestionAnsweringHandler: QuestionAnsweringHandler
         })
         .withChannels([Alexa(), Dialogflow(), LexConnect(), LexV2Channel(), Stentor(nlu)])
