@@ -44,6 +44,7 @@ provider:
     LEX_BOT_ID: ${env:LEX_BOT_ID, ""}
     LEX_BOT_ALIAS_ID: ${env:LEX_BOT_ALIAS_ID, ""}
     STENTOR_LOG_LEVEL: ${env:STENTOR_LOG_LEVEL, "info"}
+  iamRoleStatementsName: studio-runtime-role-${self:custom.myEnvironment.APP_ID}-${sls:stage}
   iamRoleStatements:
     - Effect: Allow
       Action:
