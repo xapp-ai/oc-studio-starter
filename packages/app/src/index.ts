@@ -41,7 +41,6 @@ export async function handler(event: any, context: Context, callback: Callback<a
     // Return the handler for running in an AWS Lambda function.
     const assistant = new Assistant()
         .withUserStorage(new DynamoUserStorage())
-        .withHandlerService(studioService)
         .withKnowledgeBaseService(studioService, {
             // Intent ID for your fallback to determine if we call  KnowledgeBase
             matchIntentId: "InputUnknown",
