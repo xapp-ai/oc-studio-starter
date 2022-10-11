@@ -25,6 +25,7 @@ import { StudioService } from "stentor-service-studio";
 
 // Custom Handlers
 import { QuestionAnsweringHandler } from "@xapp/question-answering-handler";
+import { ContactCaptureHandler } from "@xapp/contact-capture-handler";
 
 export async function handler(event: any, context: Context, callback: Callback<any>): Promise<void> {
     await setEnv().then().catch((error: Error) => console.error("Environment failed to load", error));
@@ -40,14 +41,14 @@ export async function handler(event: any, context: Context, callback: Callback<a
     // Return the handler for running in an AWS Lambda function.
     const assistant = new Assistant()
         .withUserStorage(new DynamoUserStorage())
-        .withHandlerService(studioService)
         .withKnowledgeBaseService(studioService, {
             // Intent ID for your fallback to determine if we call  KnowledgeBase
             matchIntentId: "InputUnknown",
             // For KnowledgeBase results we will generate a request with the following ID
-            setIntentId: "OCSearch"
+            setIntentId: "KnowledgeAnswer"
         })
         .withHandlers({
+            ContactCaptureHandler: ContactCaptureHandler,
             QuestionAnsweringHandler: QuestionAnsweringHandler
         })
         .withChannels([Alexa(), Dialogflow(), LexConnect(), LexV2Channel(), Stentor(nlu)])

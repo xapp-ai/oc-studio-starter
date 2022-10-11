@@ -1,6 +1,4 @@
-# serverless.yml
-# Note: Change this to avoid collisions
-service: studio-runtime
+service: studio-runtime-${env:STUDIO_APP_ID, "appId"}
 
 useDotenv: true
 
@@ -44,33 +42,36 @@ provider:
     LEX_BOT_ID: ${env:LEX_BOT_ID, ""}
     LEX_BOT_ALIAS_ID: ${env:LEX_BOT_ALIAS_ID, ""}
     STENTOR_LOG_LEVEL: ${env:STENTOR_LOG_LEVEL, "info"}
-  iamRoleStatements:
-    - Effect: Allow
-      Action:
-        - dynamodb:Query
-        - dynamodb:Scan
-        - dynamodb:GetItem
-        - dynamodb:PutItem
-        - dynamodb:UpdateItem
-        - dynamodb:DeleteItem
-      Resource:
-        - "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:custom.myEnvironment.STENTOR_USER_TABLE_NAME}"
-    - Effect: Allow
-      Action:
-        - logs:*
-      Resource: "arn:aws:logs:*:*:*"
-    - Effect: Allow
-      Action:
-        - secretsmanager:GetSecretValue
-      Resource: "arn:aws:secretsmanager:*:*:secret:*"
-    - Effect: Allow
-      Action:
-        - s3:*
-      Resource: "arn:aws:s3:::*"
-    - Effect: Allow
-      Action:
-        - lex:*
-      Resource: "arn:aws:lex:*:*:*"
+  iam:
+    role:
+      name: studio-runtime-role-${self:custom.myEnvironment.APP_ID}-${sls:stage}
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:Query
+            - dynamodb:Scan
+            - dynamodb:GetItem
+            - dynamodb:PutItem
+            - dynamodb:UpdateItem
+            - dynamodb:DeleteItem
+          Resource:
+            - "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:custom.myEnvironment.STENTOR_USER_TABLE_NAME}"
+        - Effect: Allow
+          Action:
+            - logs:*
+          Resource: "arn:aws:logs:*:*:*"
+        - Effect: Allow
+          Action:
+            - secretsmanager:GetSecretValue
+          Resource: "arn:aws:secretsmanager:*:*:secret:*"
+        - Effect: Allow
+          Action:
+            - s3:*
+          Resource: "arn:aws:s3:::*"
+        - Effect: Allow
+          Action:
+            - lex:*
+          Resource: "arn:aws:lex:*:*:*"
 
 functions:
   app:
