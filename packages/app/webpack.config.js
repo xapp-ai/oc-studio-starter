@@ -8,19 +8,24 @@ module.exports = {
   context: __dirname,
   mode: "production",
   entry: "./src/index.ts",
-  externals: [nodeExternals()],
+  externals: [
+    nodeExternals(),
+    "aws-sdk",
+    "coffee-script",
+    "vm2",
+    "isolated-vm",
+  ],
   optimization: {
     minimize: false,
   },
   resolve: {
     extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
-    alias: {
-      vm2: false,
-    },
+    // This is for node-fetch compatibility
+    mainFields: ["main", "module"],
   },
   output: {
     libraryTarget: "commonjs",
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname, "lib"),
     filename: "index.js",
   },
   target: "node",

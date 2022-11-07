@@ -1,5 +1,5 @@
 /*! Copyright (c) 2020, XAPP AI */
-
+import * as cors from "cors";
 import { handler } from "./index";
 
 const DEFAULT_PORT = 8080;
@@ -11,8 +11,14 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 const app = express();
-
 app.use(bodyParser.json());
+
+const corsOptions: cors.CorsOptions = {
+    origin: function (origin, callback) {
+        callback(null, true);
+    }
+}
+app.use(cors(corsOptions));
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 require("dotenv").config();
