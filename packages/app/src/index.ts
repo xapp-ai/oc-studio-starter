@@ -12,6 +12,7 @@ import { Assistant, setEnv } from "stentor";
 // Channels
 import { Alexa } from "@xapp/stentor-alexa";
 import { Dialogflow } from "@xapp/stentor-dialogflow";
+import { GoogleBusinessMessages } from "@xapp/stentor-gbm";
 import { LexConnect } from "@xapp/stentor-lex-connect";
 import { LexV2Channel } from "@xapp/stentor-lex-v2";
 import { Stentor } from "stentor-channel";
@@ -26,6 +27,9 @@ import { StudioService } from "stentor-service-studio";
 // Custom Handlers
 import { QuestionAnsweringHandler } from "@xapp/question-answering-handler";
 import { ContactCaptureHandler } from "@xapp/contact-capture-handler";
+
+// Hooks
+import { preResponseHook } from "./hooks/preResponseHook";
 
 export async function handler(event: any, context: Context, callback: Callback<any>): Promise<void> {
     await setEnv().then().catch((error: Error) => console.error("Environment failed to load", error));
@@ -51,7 +55,22 @@ export async function handler(event: any, context: Context, callback: Callback<a
             ContactCaptureHandler: ContactCaptureHandler,
             QuestionAnsweringHandler: QuestionAnsweringHandler
         })
-        .withChannels([Alexa(), Dialogflow(), LexConnect(), LexV2Channel(), Stentor(nlu)])
+        .withChannels([
+            // Remove as you see fit
+            // If you remove any, remove from package.json
+            Alexa(),
+            Dialogflow(),
+            GoogleBusinessMessages(nlu, {
+                //  Customize your bot name
+                botAvatarName: "Assistant"
+            }),
+            LexConnect(),
+            LexV2Channel(),
+            Stentor(nlu)
+        ])
+        .withHooks({
+            preResponseTranslation: preResponseHook(nlu)
+        })
         .lambda();
 
     await assistant(event, context, callback);
