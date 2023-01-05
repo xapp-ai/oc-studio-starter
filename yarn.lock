@@ -5354,6 +5354,18 @@
     actions-on-google "2.14.0"
     dialogflow "1.2.0"
 
+"@xapp/stentor-gbm@1.43.38":
+  version "1.43.38"
+  resolved "https://registry.yarnpkg.com/@xapp/stentor-gbm/-/stentor-gbm-1.43.38.tgz#29a43e302342d8fd9bdc84964608106049cc08d5"
+  integrity sha512-Xz2H5E47JSpSqcnQ5iMpNkoecj6eCEK1xsNIv+6aEnMl8Dth1hM0/b5Jq1l4lSPz/RRnaL21g648Igkwuoahow==
+  dependencies:
+    "@xapp/patterns" "1.43.38"
+    "@xapp/stentor-actions-on-google" "1.43.38"
+    "@xapp/stentor-app" "1.43.38"
+    businessmessages "1.0.3"
+    googleapis "109.0.1"
+    node-fetch "2.6.7"
+
 "@xapp/stentor-lex-connect@1.43.39":
   version "1.43.39"
   resolved "https://registry.yarnpkg.com/@xapp/stentor-lex-connect/-/stentor-lex-connect-1.43.39.tgz#8494073ff3da832cd8f0c36c36204e515b92ff26"
@@ -6878,6 +6890,11 @@ builtins@^5.0.0:
   integrity sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==
   dependencies:
     semver "^7.0.0"
+
+businessmessages@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/businessmessages/-/businessmessages-1.0.3.tgz#7c417c7a2b953b6938306d5f0262b939465c1f01"
+  integrity sha512-fWCg6RNOCWSNHf3um9jAa5a0BeV7+BRtmKLK6LIe3EYkN28HYYcDos3Z4GvXGdSw51CeRJvM2BTP7eLnT0cpog==
 
 byte-size@^7.0.0:
   version "7.0.1"
@@ -10326,6 +10343,16 @@ gaxios@^2.1.0:
     is-stream "^2.0.0"
     node-fetch "^2.3.0"
 
+gaxios@^5.0.0, gaxios@^5.0.1:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/gaxios/-/gaxios-5.0.2.tgz#ca3a40e851c728d31d7001c2357062d46bf966d1"
+  integrity sha512-TjtV2AJOZoMQqRYoy5eM8cCQogYwazWNYLQ72QB0kwa6vHHruYkGmhhyrlzbmgNHK1dNnuP2WSH81urfzyN2Og==
+  dependencies:
+    extend "^3.0.2"
+    https-proxy-agent "^5.0.0"
+    is-stream "^2.0.0"
+    node-fetch "^2.6.7"
+
 gcp-metadata@^0.6.3:
   version "0.6.3"
   resolved "https://registry.yarnpkg.com/gcp-metadata/-/gcp-metadata-0.6.3.tgz#4550c08859c528b370459bd77a7187ea0bdbc4ab"
@@ -10350,6 +10377,14 @@ gcp-metadata@^3.4.0:
   dependencies:
     gaxios "^2.1.0"
     json-bigint "^0.3.0"
+
+gcp-metadata@^5.0.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/gcp-metadata/-/gcp-metadata-5.2.0.tgz#b4772e9c5976241f5d3e69c4f446c906d25506ec"
+  integrity sha512-aFhhvvNycky2QyhG+dcfEdHBF0FRbYcf39s6WNHUDysKSrbJ5vuFbjydxBcmewtXeV248GP8dWT3ByPNxsyHCw==
+  dependencies:
+    gaxios "^5.0.0"
+    json-bigint "^1.0.0"
 
 generic-names@^4.0.0:
   version "4.0.0"
@@ -10700,6 +10735,21 @@ google-auth-library@^5.0.0:
     jws "^4.0.0"
     lru-cache "^5.0.0"
 
+google-auth-library@^8.0.2:
+  version "8.7.0"
+  resolved "https://registry.yarnpkg.com/google-auth-library/-/google-auth-library-8.7.0.tgz#e36e255baba4755ce38dded4c50f896cf8515e51"
+  integrity sha512-1M0NG5VDIvJZEnstHbRdckLZESoJwguinwN8Dhae0j2ZKIQFIV63zxm6Fo6nM4xkgqUr2bbMtV5Dgo+Hy6oo0Q==
+  dependencies:
+    arrify "^2.0.0"
+    base64-js "^1.3.0"
+    ecdsa-sig-formatter "^1.0.11"
+    fast-text-encoding "^1.0.0"
+    gaxios "^5.0.0"
+    gcp-metadata "^5.0.0"
+    gtoken "^6.1.0"
+    jws "^4.0.0"
+    lru-cache "^6.0.0"
+
 google-gax@^1.7.5:
   version "1.15.4"
   resolved "https://registry.yarnpkg.com/google-gax/-/google-gax-1.15.4.tgz#dc37dea2a8c58717cd50db40f01b21cbf9da7739"
@@ -10736,6 +10786,13 @@ google-p12-pem@^2.0.0:
   dependencies:
     node-forge "^0.10.0"
 
+google-p12-pem@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/google-p12-pem/-/google-p12-pem-4.0.1.tgz#82841798253c65b7dc2a4e5fe9df141db670172a"
+  integrity sha512-WPkN4yGtz05WZ5EhtlxNDWPhC4JIic6G8ePitwUWy4l+XPVYec+a0j0Ts47PDtW59y3RwAhUd9/h9ZZ63px6RQ==
+  dependencies:
+    node-forge "^1.3.1"
+
 googleapis-common@^0.7.0:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/googleapis-common/-/googleapis-common-0.7.2.tgz#a694f55d979cb7c2eac21a0e0439af12f9b418ba"
@@ -10747,6 +10804,26 @@ googleapis-common@^0.7.0:
     qs "^6.5.2"
     url-template "^2.0.8"
     uuid "^3.2.1"
+
+googleapis-common@^6.0.0:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/googleapis-common/-/googleapis-common-6.0.4.tgz#bd968bef2a478bcd3db51b27655502a11eaf8bf4"
+  integrity sha512-m4ErxGE8unR1z0VajT6AYk3s6a9gIMM6EkDZfkPnES8joeOlEtFEJeF8IyZkb0tjPXkktUfYrE4b3Li1DNyOwA==
+  dependencies:
+    extend "^3.0.2"
+    gaxios "^5.0.1"
+    google-auth-library "^8.0.2"
+    qs "^6.7.0"
+    url-template "^2.0.8"
+    uuid "^9.0.0"
+
+googleapis@109.0.1:
+  version "109.0.1"
+  resolved "https://registry.yarnpkg.com/googleapis/-/googleapis-109.0.1.tgz#e4b160c9aff12acfd8ce0b4617f5192b7b8c01b3"
+  integrity sha512-x286OtNu0ngzxfGz2XgRs4aMhrwutRCkCE12dh2M1jIZOpOndB7ELFXEhmtxaJ7z3257flKIbiiCJZeBO+ze/Q==
+  dependencies:
+    google-auth-library "^8.0.2"
+    googleapis-common "^6.0.0"
 
 googleapis@^39.2.0:
   version "39.2.0"
@@ -10827,6 +10904,15 @@ gtoken@^4.1.0:
     google-p12-pem "^2.0.0"
     jws "^4.0.0"
     mime "^2.2.0"
+
+gtoken@^6.1.0:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/gtoken/-/gtoken-6.1.2.tgz#aeb7bdb019ff4c3ba3ac100bbe7b6e74dce0e8bc"
+  integrity sha512-4ccGpzz7YAr7lxrT2neugmXQ3hP9ho2gcaityLVkiUecAiwiy60Ii8gRbZeOsXV19fYaRjgBSshs8kXw+NKCPQ==
+  dependencies:
+    gaxios "^5.0.1"
+    google-p12-pem "^4.0.0"
+    jws "^4.0.0"
 
 handlebars@^4.7.7:
   version "4.7.7"
@@ -12642,6 +12728,13 @@ json-bigint@^0.3.0:
   dependencies:
     bignumber.js "^9.0.0"
 
+json-bigint@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/json-bigint/-/json-bigint-1.0.0.tgz#ae547823ac0cad8398667f8cd9ef4730f5b01ff1"
+  integrity sha512-SiPv/8VpZuWbvLSMtTDU8hEfrZWg/mH/nV/b4o0CYbSxu1UIQPLdwKOCIyLQX+VIPO5vrLX3i8qtqFyhdPSUSQ==
+  dependencies:
+    bignumber.js "^9.0.0"
+
 json-buffer@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/json-buffer/-/json-buffer-3.0.1.tgz#9338802a30d3b6605fbe0613e094008ca8c05a13"
@@ -14252,7 +14345,7 @@ node-emoji@^1.11.0:
   dependencies:
     lodash "^4.17.21"
 
-node-fetch@^2.3.0, node-fetch@^2.6.0, node-fetch@^2.6.1, node-fetch@^2.6.7:
+node-fetch@2.6.7, node-fetch@^2.3.0, node-fetch@^2.6.0, node-fetch@^2.6.1, node-fetch@^2.6.7:
   version "2.6.7"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
   integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
@@ -14263,6 +14356,11 @@ node-forge@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.10.0.tgz#32dea2afb3e9926f02ee5ce8794902691a676bf3"
   integrity sha512-PPmu8eEeG9saEUvI97fm4OYxXVB6bFvyNTyiUOBichBpFG8A1Ljw3bY62+5oOjDEMHRnd0Y7HQ+x7uzxOzC6JA==
+
+node-forge@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-1.3.1.tgz#be8da2af243b2417d5f646a770663a92b7e9ded3"
+  integrity sha512-dPEtOeMvF9VMcYV/1Wb8CPoVAXtp6MKMlcbAt4ddqmGqUJ6fQZFXkNZNkNlfevtNkGtaSoXf/vNNNSvgrdXwtA==
 
 node-gyp-build@^4.3.0:
   version "4.5.0"
@@ -16119,7 +16217,7 @@ qs@6.10.3:
   dependencies:
     side-channel "^1.0.4"
 
-qs@6.11.0, qs@^6.10.0, qs@^6.10.3, qs@^6.5.2:
+qs@6.11.0, qs@^6.10.0, qs@^6.10.3, qs@^6.5.2, qs@^6.7.0:
   version "6.11.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.11.0.tgz#fd0d963446f7a65e1367e01abd85429453f0c37a"
   integrity sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==
