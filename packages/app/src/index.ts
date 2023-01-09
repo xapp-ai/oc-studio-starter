@@ -49,7 +49,7 @@ export async function handler(event: any, context: Context, callback: Callback<a
             // Intent ID for your fallback to determine if we call  KnowledgeBase
             matchIntentId: "InputUnknown",
             // For KnowledgeBase results we will generate a request with the following ID
-            setIntentId: "KnowledgeAnswer"
+            setIntentId: "OCSearch"
         })
         .withHandlers({
             ContactCaptureHandler: ContactCaptureHandler,
