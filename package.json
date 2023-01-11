@@ -27,5 +27,6 @@
     "test": "TZ=UTC lerna run test",
     "deploy:prod": "lerna run deploy:prod",
     "release": "lerna version --yes && git push origin --tags && lerna publish from-git --yes"
-  }
+  },
+  "packageManager": "yarn@3.3.1"
 }

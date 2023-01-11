@@ -28,9 +28,6 @@ import { StudioService } from "stentor-service-studio";
 import { QuestionAnsweringHandler } from "@xapp/question-answering-handler";
 import { ContactCaptureHandler } from "@xapp/contact-capture-handler";
 
-// Hooks
-import { preResponseHook } from "./hooks/preResponseHook";
-
 export async function handler(event: any, context: Context, callback: Callback<any>): Promise<void> {
     await setEnv().then().catch((error: Error) => console.error("Environment failed to load", error));
 
@@ -68,9 +65,6 @@ export async function handler(event: any, context: Context, callback: Callback<a
             LexV2Channel(),
             Stentor(nlu)
         ])
-        .withHooks({
-            preResponseTranslation: preResponseHook(nlu)
-        })
         .lambda();
 
     await assistant(event, context, callback);

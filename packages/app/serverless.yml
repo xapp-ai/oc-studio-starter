@@ -66,11 +66,13 @@ provider:
           Resource: "arn:aws:secretsmanager:*:*:secret:*"
         - Effect: Allow
           Action:
-            - s3:*
-          Resource: "arn:aws:s3:::*"
-        - Effect: Allow
-          Action:
-            - lex:*
+            - lex:PostContent
+            - lex:PostText
+            - lex:PutSession
+            - lex:GetSession
+            - lex:DeleteSession
+            - lex:RecognizeText
+            - lex:RecognizeUtterance
           Resource: "arn:aws:lex:*:*:*"
 
 functions:
