@@ -1,16 +1,22 @@
 {
   "compilerOptions": {
-    "declaration": true,
+    "outDir": "lib",
     "module": "commonjs",
     "target": "ES2021",
     "lib": ["ES2021"],
-    "noImplicitAny": true,
+    "sourceMap": true,
+    "allowJs": false,
+    "jsx": "react",
+    "declaration": true,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "outDir": "lib",
-    "rootDir": "src",
-    "sourceMap": true
+    "strict": false,
+    "resolveJsonModule": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "src/**/__test__/*"]
+  "exclude": ["node_modules", "lib", "src/**/__test__/*"]
 }

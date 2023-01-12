@@ -9,17 +9,15 @@
     "access": "restricted"
   },
   "private": true,
-  "dependencies": {
-    "stentor": "1.57.42"
-  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.48.0",
     "eslint": "8.31.0",
     "eslint-plugin-notice": "0.9.10",
+    "stentor-models": "1.57.42",
     "typescript": "4.8.4"
   },
   "peerDependencies": {
-    "stentor": "1.X"
+    "stentor-models": "1.X"
   },
   "scripts": {
     "build": "tsc -d true -p .",

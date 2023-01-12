@@ -6985,10 +6985,10 @@ __metadata:
     "@typescript-eslint/eslint-plugin": 5.48.0
     eslint: 8.31.0
     eslint-plugin-notice: 0.9.10
-    stentor: 1.57.42
+    stentor-models: 1.57.42
     typescript: 4.8.4
   peerDependencies:
-    stentor: 1.X
+    stentor-models: 1.X
   languageName: unknown
   linkType: soft
 
@@ -7010,6 +7010,7 @@ __metadata:
     "@types/aws-lambda": 8.10.109
     "@types/chai": 4.3.4
     "@types/cors": 2.8.13
+    "@types/express": 4.17.15
     "@types/jest": 29.2.4
     "@types/node": 18.7.18
     "@types/sinon": 10.0.13
@@ -7025,6 +7026,7 @@ __metadata:
     "@xapp/stentor-gbm": 1.43.46
     "@xapp/stentor-lex-connect": 1.43.46
     "@xapp/stentor-lex-v2": 1.43.46
+    ansi-styles: 6.2.1
     aws-sdk: 2.1292.0
     babel-loader: 9.1.2
     babel-preset-minify: 0.5.2
@@ -7041,7 +7043,6 @@ __metadata:
     rimraf: 3.0.2
     serverless: 3.26.0
     serverless-plugin-common-excludes: 4.0.0
-    serverless-plugin-monorepo: 0.11.0
     sinon: 15.0.1
     sinon-chai: 3.7.0
     stentor: 1.57.42
@@ -7705,6 +7706,13 @@ __metadata:
   version: 5.0.1
   resolution: "ansi-regex@npm:5.0.1"
   checksum: 2aa4bb54caf2d622f1afdad09441695af2a83aa3fe8b8afa581d205e57ed4261c183c4d3877cee25794443fde5876417d859c108078ab788d6af7e4fe52eb66b
+  languageName: node
+  linkType: hard
+
+"ansi-styles@npm:6.2.1":
+  version: 6.2.1
+  resolution: "ansi-styles@npm:6.2.1"
+  checksum: ef940f2f0ced1a6347398da88a91da7930c33ecac3c77b72c5905f8b8fe402c52e6fde304ff5347f616e27a742da3f1dc76de98f6866c69251ad0b07a66776d9
   languageName: node
   linkType: hard
 
@@ -22921,17 +22929,6 @@ __metadata:
   dependencies:
     semver: ^7.3.5
   checksum: 6911d28c50d62284e7fc2025d97656b72533f77af45ac7fd47346653641616ffab14c61d9af4bbdcbe88a1bea60e2c08ad1587b555f9a4b94744d3a181a27fb3
-  languageName: node
-  linkType: hard
-
-"serverless-plugin-monorepo@npm:0.11.0":
-  version: 0.11.0
-  resolution: "serverless-plugin-monorepo@npm:0.11.0"
-  dependencies:
-    fs-extra: ^9.0.1
-  peerDependencies:
-    serverless: 1 || 2 || 3
-  checksum: 420198ef282babc105461d83c898f6704024d6a951145c3e51468218a3c1452a6ab07f75b0a99a47a132ed3edb0741b5dc814a07ae7689b4b300c2d3ed16c0b7
   languageName: node
   linkType: hard
 

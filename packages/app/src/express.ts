@@ -1,12 +1,12 @@
 /*! Copyright (c) 2020, XAPP AI */
-import * as cors from "cors";
+import cors from "cors";
+import express from "express";
+
 import { handler } from "./index";
 
 const DEFAULT_PORT = 8080;
 const SERVER_PORT = process.env.PORT || DEFAULT_PORT;
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const express = require("express");
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const bodyParser = require("body-parser");
 
@@ -23,8 +23,8 @@ app.use(cors(corsOptions));
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 require("dotenv").config();
 
-app.post("/", async (request: any, response: any) => {
-    await handler(request.body, { request } as any, (whatever: any, stentorResponse: string) => {
+app.post("/", async (request, response) => {
+    await handler(request.body, { request, express: true } as any, (whatever: any, stentorResponse: string) => {
         response.send(stentorResponse);
     });
 });

@@ -2,15 +2,14 @@ service: studio-runtime-${env:STUDIO_APP_ID, "appId"}
 
 useDotenv: true
 
+plugins:
+  - serverless-plugin-common-excludes
+
 custom:
   myEnvironment:
     APP_ID: ${env:STUDIO_APP_ID, "appId"}
     STENTOR_USER_TABLE_NAME: ${self:custom.myEnvironment.APP_ID}-user-${sls:stage}
     STUDIO_SECRET_NAME: ${self:custom.myEnvironment.APP_ID}-secrets-${sls:stage}
-
-plugins:
-  - serverless-plugin-common-excludes
-  - serverless-plugin-monorepo
 
 package:
   excludeDevDependencies: true
@@ -25,6 +24,8 @@ package:
     - widget/**
     - yarn.lock
     - node_modules/aws-sdk/**
+    - node_modules/**/aws-sdk/**
+    - node_modules/**/typescript/**
 
 provider:
   name: aws

@@ -28,3 +28,11 @@ From app root (`cd packages/app`), you can run an express server that calls your
 ```bash
 yarn start
 ```
+
+Optional: Then also at app root in another terminal:
+
+```bash
+xapp serve
+```
+
+Which will then serve the app's chat widget channel.
