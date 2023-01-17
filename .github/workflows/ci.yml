@@ -26,3 +26,7 @@ jobs:
       - run: yarn lint
       # - run: npm run test
       - run: yarn build
+      # test the compilation
+      - run: yarn webpack
+      # make sure the compiled version runs
+      - run: node lib/index.js
