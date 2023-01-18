@@ -23,6 +23,7 @@
     "clean:modules": "lerna clean",
     "lint": "lerna run lint",
     "build": "lerna run build",
+    "dist": "lerna run dist",
     "test": "TZ=UTC lerna run test",
     "deploy:prod": "lerna run deploy:prod",
     "release": "lerna version --yes && git push origin --tags && lerna publish from-git --yes"

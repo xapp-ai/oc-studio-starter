@@ -56,6 +56,7 @@
   "scripts": {
     "build": "tsc -d true -p .",
     "clean": "rimraf ./lib",
+    "dist": "yarn webpack",
     "webpack": "rimraf ./lib && webpack",
     "update:prod": "rimraf ./lib && yarn webpack && serverless deploy -f app --stage production",
     "deploy:staging": "rimraf ./lib && yarn webpack && serverless deploy --stage staging",
