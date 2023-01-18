@@ -10,9 +10,7 @@ import { Callback, Context } from "aws-lambda";
 import { Assistant, setEnv } from "stentor";
 
 // Channels
-import { Alexa } from "@xapp/stentor-alexa";
-import { Dialogflow } from "@xapp/stentor-dialogflow";
-import { LexConnect } from "@xapp/stentor-lex-connect";
+import { GoogleBusinessMessages } from "@xapp/stentor-gbm";
 import { LexV2Channel } from "@xapp/stentor-lex-v2";
 import { Stentor } from "stentor-channel";
 
@@ -40,18 +38,33 @@ export async function handler(event: any, context: Context, callback: Callback<a
 
     // Return the handler for running in an AWS Lambda function.
     const assistant = new Assistant()
+        // We are using a simple dynamo user storage but all you need is something that implements the interface UserStorageService
         .withUserStorage(new DynamoUserStorage())
         .withKnowledgeBaseService(studioService, {
             // Intent ID for your fallback to determine if we call  KnowledgeBase
             matchIntentId: "InputUnknown",
             // For KnowledgeBase results we will generate a request with the following ID
-            setIntentId: "KnowledgeAnswer"
+            setIntentId: "OCSearch"
         })
         .withHandlers({
+            // Add pre-built handlers or make custom ones!
             ContactCaptureHandler: ContactCaptureHandler,
             QuestionAnsweringHandler: QuestionAnsweringHandler
         })
-        .withChannels([Alexa(), Dialogflow(), LexConnect(), LexV2Channel(), Stentor(nlu)])
+        .withChannels([
+            // Add/Remove your channels here, even make custom ones!
+            // Alexa(), <-- add package @xapp/stentor-alexa & import { Alexa } from "@xapp/stentor-alexa";
+            // Note about Alexa: You may have trouble building with the current webpack config if you bring in Alexa
+            // Dialogflow(), <-- add package @xapp/stentor-dialogflow & import { Dialogflow } from "@xapp/stentor-dialogflow";
+            // LexConnect(), <-- add package @xapp/stentor-lex-connect & import { LexConnect } from "@xapp/stentor-lex-connect"
+
+            GoogleBusinessMessages(nlu, {
+                //  Customize your bot name
+                botAvatarName: "Assistant"
+            }),
+            LexV2Channel(),
+            Stentor(nlu)
+        ])
         .lambda();
 
     await assistant(event, context, callback);

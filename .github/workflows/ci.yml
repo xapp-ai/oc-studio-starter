@@ -24,5 +24,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: yarn --frozen-lockfile
       - run: yarn lint
-      # - run: npm run test
+      - run: yarn test
       - run: yarn build
+      # compile for distribution
+      - run: yarn dist
+      # make sure the compiled version runs
+      - run: node packages/app/lib/index.js

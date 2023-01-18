@@ -1,4 +1,4 @@
-/*! Copyright (c) 2020, XAPP AI */
+/*! Copyright (c) 2022, XAPP AI */
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require("path");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");

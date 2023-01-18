@@ -2,15 +2,14 @@ service: studio-runtime-${env:STUDIO_APP_ID, "appId"}
 
 useDotenv: true
 
+plugins:
+  - serverless-plugin-common-excludes
+
 custom:
   myEnvironment:
     APP_ID: ${env:STUDIO_APP_ID, "appId"}
     STENTOR_USER_TABLE_NAME: ${self:custom.myEnvironment.APP_ID}-user-${sls:stage}
     STUDIO_SECRET_NAME: ${self:custom.myEnvironment.APP_ID}-secrets-${sls:stage}
-
-plugins:
-  - serverless-plugin-common-excludes
-  - serverless-plugin-monorepo
 
 package:
   excludeDevDependencies: true
@@ -28,7 +27,7 @@ package:
 
 provider:
   name: aws
-  runtime: nodejs14.x
+  runtime: nodejs16.x
   stage: ${sls:stage}
   region: us-east-1
   stackName: ${self:custom.myEnvironment.APP_ID}-${sls:stage}
@@ -66,11 +65,13 @@ provider:
           Resource: "arn:aws:secretsmanager:*:*:secret:*"
         - Effect: Allow
           Action:
-            - s3:*
-          Resource: "arn:aws:s3:::*"
-        - Effect: Allow
-          Action:
-            - lex:*
+            - lex:PostContent
+            - lex:PostText
+            - lex:PutSession
+            - lex:GetSession
+            - lex:DeleteSession
+            - lex:RecognizeText
+            - lex:RecognizeUtterance
           Resource: "arn:aws:lex:*:*:*"
 
 functions:

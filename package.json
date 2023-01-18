@@ -14,18 +14,19 @@
   },
   "devDependencies": {
     "@xapp/config": "0.2.3",
-    "lerna": "6.4.0",
+    "lerna": "6.4.1",
     "semantic-release": "19.0.5"
   },
   "scripts": {
     "lerna": "lerna",
-    "postinstall": "lerna bootstrap",
     "clean": "lerna run clean",
     "clean:modules": "lerna clean",
     "lint": "lerna run lint",
     "build": "lerna run build",
+    "dist": "lerna run dist",
     "test": "TZ=UTC lerna run test",
     "deploy:prod": "lerna run deploy:prod",
     "release": "lerna version --yes && git push origin --tags && lerna publish from-git --yes"
-  }
+  },
+  "packageManager": "yarn@3.3.1"
 }
