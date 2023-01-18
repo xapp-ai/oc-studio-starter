@@ -10,8 +10,6 @@ import { Callback, Context } from "aws-lambda";
 import { Assistant, setEnv } from "stentor";
 
 // Channels
-import { Alexa } from "@xapp/stentor-alexa";
-import { Dialogflow } from "@xapp/stentor-dialogflow";
 import { GoogleBusinessMessages } from "@xapp/stentor-gbm";
 import { LexConnect } from "@xapp/stentor-lex-connect";
 import { LexV2Channel } from "@xapp/stentor-lex-v2";
@@ -41,6 +39,7 @@ export async function handler(event: any, context: Context, callback: Callback<a
 
     // Return the handler for running in an AWS Lambda function.
     const assistant = new Assistant()
+        // We are using a simple dynamo user storage but all you need is something that implements the interface UserStorageService
         .withUserStorage(new DynamoUserStorage())
         .withKnowledgeBaseService(studioService, {
             // Intent ID for your fallback to determine if we call  KnowledgeBase
@@ -49,14 +48,14 @@ export async function handler(event: any, context: Context, callback: Callback<a
             setIntentId: "OCSearch"
         })
         .withHandlers({
+            // Add pre-built handlers or make custom ones!
             ContactCaptureHandler: ContactCaptureHandler,
             QuestionAnsweringHandler: QuestionAnsweringHandler
         })
         .withChannels([
-            // Remove as you see fit
-            // If you remove any, remove from package.json
-            Alexa(),
-            Dialogflow(),
+            // Add/Remove your channels here, even make custom ones!
+            // Alexa(), <-- add package @xapp/stentor-alexa & import { Alexa } from "@xapp/stentor-alexa";
+            // Dialogflow(), <-- add package @xapp/stentor-dialogflow & import { Dialogflow } from "@xapp/stentor-dialogflow";
             GoogleBusinessMessages(nlu, {
                 //  Customize your bot name
                 botAvatarName: "Assistant"
