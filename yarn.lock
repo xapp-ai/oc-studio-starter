@@ -5224,6 +5224,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/express-serve-static-core@npm:^4.17.33":
+  version: 4.17.33
+  resolution: "@types/express-serve-static-core@npm:4.17.33"
+  dependencies:
+    "@types/node": "*"
+    "@types/qs": "*"
+    "@types/range-parser": "*"
+  checksum: dce580d16b85f207445af9d4053d66942b27d0c72e86153089fa00feee3e96ae336b7bedb31ed4eea9e553c99d6dd356ed6e0928f135375d9f862a1a8015adf2
+  languageName: node
+  linkType: hard
+
 "@types/express@npm:4.17.15, @types/express@npm:~4.17.7":
   version: 4.17.15
   resolution: "@types/express@npm:4.17.15"
@@ -5236,15 +5247,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/express@npm:4.17.16":
-  version: 4.17.16
-  resolution: "@types/express@npm:4.17.16"
+"@types/express@npm:4.17.17":
+  version: 4.17.17
+  resolution: "@types/express@npm:4.17.17"
   dependencies:
     "@types/body-parser": "*"
-    "@types/express-serve-static-core": ^4.17.31
+    "@types/express-serve-static-core": ^4.17.33
     "@types/qs": "*"
     "@types/serve-static": "*"
-  checksum: 43f3ed2cea6e5e83c7c1098c5152f644e975fd764443717ff9c812a1518416a9e7e9f824ffe852c118888cbfb994ed023cad08331f49b19ced469bb185cdd5cd
+  checksum: 0196dacc275ac3ce89d7364885cb08e7fb61f53ca101f65886dbf1daf9b7eb05c0943e2e4bbd01b0cc5e50f37e0eea7e4cbe97d0304094411ac73e1b7998f4da
   languageName: node
   linkType: hard
 
@@ -6355,7 +6366,7 @@ __metadata:
     "@xapp/contact-capture-handler": 1.0.5
     "@xapp/oc-studio-starter-models": 1.0.0
     "@xapp/question-answering-handler": 2.1.9
-    "@xapp/stentor-gbm": 1.44.23
+    "@xapp/stentor-gbm": 1.44.25
     "@xapp/stentor-lex-connect": 1.44.23
     "@xapp/stentor-lex-v2": 1.44.22
     ansi-styles: 6.2.1
@@ -6377,7 +6388,7 @@ __metadata:
     serverless-plugin-common-excludes: 4.0.0
     sinon: 15.0.1
     sinon-chai: 3.7.0
-    stentor: 1.57.66
+    stentor: 1.57.67
     stentor-channel: 1.57.66
     stentor-user-storage-dynamo: 1.57.65
     ts-node: 10.9.1
@@ -6476,15 +6487,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xapp/stentor-gbm@npm:1.44.23":
-  version: 1.44.23
-  resolution: "@xapp/stentor-gbm@npm:1.44.23"
+"@xapp/stentor-gbm@npm:1.44.25":
+  version: 1.44.25
+  resolution: "@xapp/stentor-gbm@npm:1.44.25"
   dependencies:
     "@xapp/patterns": 2.0.1
     "@xapp/stentor-actions-on-google": 1.44.23
     "@xapp/stentor-app": 1.44.23
     businessmessages: 1.0.4
-    googleapis: 109.0.1
+    google-auth-library: 8.7.0
+    googleapis-common: 6.0.4
     node-fetch: 2.6.9
   peerDependencies:
     stentor-constants: 1.x
@@ -6497,7 +6509,7 @@ __metadata:
     stentor-request: 1.x
     stentor-response: 1.x
     stentor-utils: 1.x
-  checksum: aec224320c2097e0cf9c781829d4ee662a2e34f7605a4d61dc76162af6df13277e6a180e80703a55f9a0e7ef8b6973eb15197b8cf239e7174ddb8b4e5722aba0
+  checksum: d76a319688251f03bd6e33003578b3415bdf334fb1ece128c1bf80fcefb14d6e094ce5be8f0f4351345adcdfd72077be1e424eeb69ae5cf3cac51c6d99d98fe6
   languageName: node
   linkType: hard
 
@@ -13238,6 +13250,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"google-auth-library@npm:8.7.0, google-auth-library@npm:^8.0.2":
+  version: 8.7.0
+  resolution: "google-auth-library@npm:8.7.0"
+  dependencies:
+    arrify: ^2.0.0
+    base64-js: ^1.3.0
+    ecdsa-sig-formatter: ^1.0.11
+    fast-text-encoding: ^1.0.0
+    gaxios: ^5.0.0
+    gcp-metadata: ^5.0.0
+    gtoken: ^6.1.0
+    jws: ^4.0.0
+    lru-cache: ^6.0.0
+  checksum: 978d1c5f763aceddbc0218cd76fa578c8ba54a0653cefffaf61847bb8d246ebf26e7fcd276d8885b8a3354c17eef0a11cfae9e60e4df62c01cae4378d4eb78e4
+  languageName: node
+  linkType: hard
+
 "google-auth-library@npm:^1.6.1":
   version: 1.6.1
   resolution: "google-auth-library@npm:1.6.1"
@@ -13270,23 +13299,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"google-auth-library@npm:^8.0.2":
-  version: 8.7.0
-  resolution: "google-auth-library@npm:8.7.0"
-  dependencies:
-    arrify: ^2.0.0
-    base64-js: ^1.3.0
-    ecdsa-sig-formatter: ^1.0.11
-    fast-text-encoding: ^1.0.0
-    gaxios: ^5.0.0
-    gcp-metadata: ^5.0.0
-    gtoken: ^6.1.0
-    jws: ^4.0.0
-    lru-cache: ^6.0.0
-  checksum: 978d1c5f763aceddbc0218cd76fa578c8ba54a0653cefffaf61847bb8d246ebf26e7fcd276d8885b8a3354c17eef0a11cfae9e60e4df62c01cae4378d4eb78e4
-  languageName: node
-  linkType: hard
-
 "google-p12-pem@npm:^1.0.0":
   version: 1.0.5
   resolution: "google-p12-pem@npm:1.0.5"
@@ -13310,21 +13322,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"googleapis-common@npm:^0.7.0":
-  version: 0.7.2
-  resolution: "googleapis-common@npm:0.7.2"
-  dependencies:
-    gaxios: ^1.2.2
-    google-auth-library: ^3.0.0
-    pify: ^4.0.0
-    qs: ^6.5.2
-    url-template: ^2.0.8
-    uuid: ^3.2.1
-  checksum: 101cdccb989f93d0c60fc3ab57d11dfddaff99511796d36119d63e84b5c55dd0253e188898f7d75af43bc1dfcbc02ae64865452cf310a20d58fb0272003c6d93
-  languageName: node
-  linkType: hard
-
-"googleapis-common@npm:^6.0.0":
+"googleapis-common@npm:6.0.4":
   version: 6.0.4
   resolution: "googleapis-common@npm:6.0.4"
   dependencies:
@@ -13338,13 +13336,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"googleapis@npm:109.0.1":
-  version: 109.0.1
-  resolution: "googleapis@npm:109.0.1"
+"googleapis-common@npm:^0.7.0":
+  version: 0.7.2
+  resolution: "googleapis-common@npm:0.7.2"
   dependencies:
-    google-auth-library: ^8.0.2
-    googleapis-common: ^6.0.0
-  checksum: d07b928d6003c9d4959689466f305474c3fd9e43412d6d8de57c2995a380baf70d0cdff9575559757fe76149d8edb75b1609e75ad5539548f7836c43e2b954ca
+    gaxios: ^1.2.2
+    google-auth-library: ^3.0.0
+    pify: ^4.0.0
+    qs: ^6.5.2
+    url-template: ^2.0.8
+    uuid: ^3.2.1
+  checksum: 101cdccb989f93d0c60fc3ab57d11dfddaff99511796d36119d63e84b5c55dd0253e188898f7d75af43bc1dfcbc02ae64865452cf310a20d58fb0272003c6d93
   languageName: node
   linkType: hard
 
@@ -22851,13 +22853,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stentor@npm:1.57.66":
-  version: 1.57.66
-  resolution: "stentor@npm:1.57.66"
+"stentor@npm:1.57.67":
+  version: 1.57.67
+  resolution: "stentor@npm:1.57.67"
   dependencies:
     "@types/aws-lambda": 8.10.110
     "@types/body-parser": 1.19.2
-    "@types/express": 4.17.16
+    "@types/express": 4.17.17
     "@xapp/patterns": 2.0.1
     body-parser: 1.20.1
     dotenv: 16.0.3
@@ -22878,7 +22880,7 @@ __metadata:
     stentor-utils: 1.57.66
   peerDependencies:
     aws-sdk: 2.X
-  checksum: 30a0bf2acddc12a5c43259dc784caecdb0a1ddad75a185ae0f525336bda9f16c092a3d888c4ad475524c1746c162e076f140b449140a706d6c08ebb9e5ef29c1
+  checksum: 1704cf6595b0fb1e2aed8223d21e97393841ce7519c8ebdad2193b6486561c78d37fb218bfea821ee21f25ce15972e975db5c98ed02fca069ea2ed218c09bc55
   languageName: node
   linkType: hard
 
