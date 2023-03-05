@@ -5956,7 +5956,7 @@ __metadata:
     jest: 29.4.0
     nodemon: 2.0.20
     rimraf: 4.3.0
-    serverless: 3.27.0
+    serverless: 3.28.1
     serverless-plugin-common-excludes: 4.0.0
     sinon: 15.0.1
     sinon-chai: 3.7.0
@@ -7036,7 +7036,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:2.1328.0":
+"aws-sdk@npm:2.1328.0, aws-sdk@npm:^2.1326.0":
   version: 2.1328.0
   resolution: "aws-sdk@npm:2.1328.0"
   dependencies:
@@ -7051,24 +7051,6 @@ __metadata:
     uuid: 8.0.0
     xml2js: 0.4.19
   checksum: 6455ac3067dccb65a530b83266863cd459b78ae82ec1dcb1d7df284046b15a5690a4478af9b0009c38650e8f0dc8a798e30ca768380a6742c987642d7ebd739b
-  languageName: node
-  linkType: hard
-
-"aws-sdk@npm:^2.1303.0":
-  version: 2.1309.0
-  resolution: "aws-sdk@npm:2.1309.0"
-  dependencies:
-    buffer: 4.9.2
-    events: 1.1.1
-    ieee754: 1.1.13
-    jmespath: 0.16.0
-    querystring: 0.2.0
-    sax: 1.2.1
-    url: 0.10.3
-    util: ^0.12.4
-    uuid: 8.0.0
-    xml2js: 0.4.19
-  checksum: ad24e9629a89ab937395cffe8f43c7fedabdb161578af66bd7378af174a98c1e2dbe0799809fc12ef46959ca3de2c2841ee3527d1eb15081e33d5509afdacdb9
   languageName: node
   linkType: hard
 
@@ -8629,10 +8611,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ci-info@npm:^3.2.0, ci-info@npm:^3.5.0, ci-info@npm:^3.7.1":
+"ci-info@npm:^3.2.0, ci-info@npm:^3.5.0":
   version: 3.7.1
   resolution: "ci-info@npm:3.7.1"
   checksum: 72d93d5101ea1c186511277fbd8d06ae8a6e028cc2fb94361e92bf735b39c5ebd192e8d15a66ff8c4e3ed569f87c2f844e96f90e141b2de5c649f77ec34ff601
+  languageName: node
+  linkType: hard
+
+"ci-info@npm:^3.8.0":
+  version: 3.8.0
+  resolution: "ci-info@npm:3.8.0"
+  checksum: d0a4d3160497cae54294974a7246202244fff031b0a6ea20dd57b10ec510aa17399c41a1b0982142c105f3255aff2173e5c0dd7302ee1b2f28ba3debda375098
   languageName: node
   linkType: hard
 
@@ -17579,7 +17568,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:2.6.9, node-fetch@npm:^2.6.8":
+"node-fetch@npm:2.6.9, node-fetch@npm:^2.6.8, node-fetch@npm:^2.6.9":
   version: 2.6.9
   resolution: "node-fetch@npm:2.6.9"
   dependencies:
@@ -18420,6 +18409,17 @@ __metadata:
     is-docker: ^2.1.1
     is-wsl: ^2.2.0
   checksum: e9545bec64cdbf30a0c35c1bdc310344adf8428a117f7d8df3c0af0a0a24c513b304916a6d9b11db0190ff7225c2d578885080b761ed46a3d5f6f1eebb98b63c
+  languageName: node
+  linkType: hard
+
+"open@npm:^8.4.2":
+  version: 8.4.2
+  resolution: "open@npm:8.4.2"
+  dependencies:
+    define-lazy-prop: ^2.0.0
+    is-docker: ^2.1.1
+    is-wsl: ^2.2.0
+  checksum: 6388bfff21b40cb9bd8f913f9130d107f2ed4724ea81a8fd29798ee322b361ca31fa2cdfb491a5c31e43a3996cfe9566741238c7a741ada8d7af1cb78d85cf26
   languageName: node
   linkType: hard
 
@@ -21706,9 +21706,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serverless@npm:3.27.0":
-  version: 3.27.0
-  resolution: "serverless@npm:3.27.0"
+"serverless@npm:3.28.1":
+  version: 3.28.1
+  resolution: "serverless@npm:3.28.1"
   dependencies:
     "@serverless/dashboard-plugin": ^6.2.3
     "@serverless/platform-client": ^4.3.2
@@ -21716,12 +21716,12 @@ __metadata:
     ajv: ^8.12.0
     ajv-formats: ^2.1.1
     archiver: ^5.3.1
-    aws-sdk: ^2.1303.0
+    aws-sdk: ^2.1326.0
     bluebird: ^3.7.2
     cachedir: ^2.3.0
     chalk: ^4.1.2
     child-process-ext: ^2.1.1
-    ci-info: ^3.7.1
+    ci-info: ^3.8.0
     cli-progress-footer: ^2.3.2
     d: ^1.0.1
     dayjs: ^1.11.7
@@ -21745,10 +21745,10 @@ __metadata:
     lodash: ^4.17.21
     memoizee: ^0.4.15
     micromatch: ^4.0.5
-    node-fetch: ^2.6.8
+    node-fetch: ^2.6.9
     npm-registry-utilities: ^1.0.0
     object-hash: ^3.0.0
-    open: ^8.4.0
+    open: ^8.4.2
     path2: ^0.1.0
     process-utils: ^4.0.0
     promise-queue: ^2.2.5
@@ -21766,7 +21766,7 @@ __metadata:
   bin:
     serverless: bin/serverless.js
     sls: bin/serverless.js
-  checksum: d1bf7c44141b801cc2df3e7648bff11fae51dd7193a59cfd3f2f48d1d2be44a45f187bb29e3f6034a8e8086850480d3e6022889fd4a6515ed8cc6834d0c3fe92
+  checksum: 04315f923c79e37c83fd83e8968408286e591863304cf3678138ec3828afac15b2ed486b6b52c9ad3f48f3bd9603854d625d79efc10f33bc8e154a6afc0c5796
   languageName: node
   linkType: hard
 
