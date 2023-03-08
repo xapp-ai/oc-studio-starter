@@ -5942,7 +5942,7 @@ __metadata:
     "@xapp/stentor-lex-connect": 1.45.14
     "@xapp/stentor-lex-v2": 1.45.12
     ansi-styles: 6.2.1
-    aws-sdk: 2.1328.0
+    aws-sdk: 2.1330.0
     babel-loader: 9.1.2
     babel-preset-minify: 0.5.2
     body-parser: 1.20.2
@@ -7066,7 +7066,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:2.1328.0, aws-sdk@npm:^2.1326.0":
+"aws-sdk@npm:2.1330.0":
+  version: 2.1330.0
+  resolution: "aws-sdk@npm:2.1330.0"
+  dependencies:
+    buffer: 4.9.2
+    events: 1.1.1
+    ieee754: 1.1.13
+    jmespath: 0.16.0
+    querystring: 0.2.0
+    sax: 1.2.1
+    url: 0.10.3
+    util: ^0.12.4
+    uuid: 8.0.0
+    xml2js: 0.4.19
+  checksum: 813a65ed95f6ae8b30af64a44292a54b5423fc2b946b10b31a7faf309c237f3f4686a91eb667847583a47bc413bdb21e8128ee470e7b9a4ad6f994398e9c7f8f
+  languageName: node
+  linkType: hard
+
+"aws-sdk@npm:^2.1326.0":
   version: 2.1328.0
   resolution: "aws-sdk@npm:2.1328.0"
   dependencies:
