@@ -5778,23 +5778,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xapp/chat-widget-core@npm:1.54.0":
-  version: 1.54.0
-  resolution: "@xapp/chat-widget-core@npm:1.54.0"
+"@xapp/chat-widget-core@npm:1.54.1":
+  version: 1.54.1
+  resolution: "@xapp/chat-widget-core@npm:1.54.1"
   peerDependencies:
     react: 17.X
     react-dom: 17.X
-  checksum: 17fa9a22dfd31494f0e4c3e207835a8d30b1298b9cd5754b4dc2780f0c39da0df162ec25586ba90ab96c4cedef2ea1ec59861c15ab68dee054512adc802fd922
+  checksum: de5db4b8871420690478698b759570c06768f63f347a6f1fc6560ed61e4bb08fa47e8d57ed1db6f8dcb52ef481dae740a7b22bebcf3abb762e5d6295662daae1
   languageName: node
   linkType: hard
 
-"@xapp/chat-widget@npm:1.54.0":
-  version: 1.54.0
-  resolution: "@xapp/chat-widget@npm:1.54.0"
+"@xapp/chat-widget@npm:1.54.1":
+  version: 1.54.1
+  resolution: "@xapp/chat-widget@npm:1.54.1"
   dependencies:
     "@rollup/plugin-replace": ^4.0.0
-    "@xapp/chat-widget-core": 1.54.0
-    "@xapp/stentor-chat-widget": 1.54.0
+    "@xapp/chat-widget-core": 1.54.1
+    "@xapp/stentor-chat-widget": 1.54.1
     date-fns: 2.28.0
     react-transition-group: 4.4.5
     socket.io-client: 4.5.1
@@ -5807,7 +5807,7 @@ __metadata:
     redux: 4.X
     redux-thunk: 2.X
     stentor-models: 1.X
-  checksum: 91acd620c1c2a1aaee3b3496690301d276e71ac2bd53d3217a3e97ac67f7b441c1d3903b5e2b5611a04434858eeb638ae3d6569ddf623fab576486a462479962
+  checksum: 8ccafaa6156761e8ee578c7bcc6a465056a436f08165e30d86793a6c733622ebbf44d074043d9a7f5c14fa6d2ead57b2308f102d8709fd9f5e765eeebfaf41ab
   languageName: node
   linkType: hard
 
@@ -5860,7 +5860,7 @@ __metadata:
     "@testing-library/jest-dom": 5.16.5
     "@types/jest": 29.4.0
     "@typescript-eslint/eslint-plugin": 5.53.0
-    "@xapp/chat-widget": 1.54.0
+    "@xapp/chat-widget": 1.54.1
     "@xapp/oc-studio-starter-models": 1.0.0
     babel-jest: 29.5.0
     babel-loader: 9.1.2
@@ -5889,7 +5889,7 @@ __metadata:
     ts-jest: 29.0.5
     typescript: 4.9.5
   peerDependencies:
-    "@xapp/chat-widget": 1.54.0
+    "@xapp/chat-widget": 1.54.1
     react: 17.0.2
     react-dom: 17.0.2
   languageName: unknown
@@ -6047,15 +6047,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xapp/stentor-chat-widget@npm:1.54.0":
-  version: 1.54.0
-  resolution: "@xapp/stentor-chat-widget@npm:1.54.0"
+"@xapp/stentor-chat-widget@npm:1.54.1":
+  version: 1.54.1
+  resolution: "@xapp/stentor-chat-widget@npm:1.54.1"
   dependencies:
-    stentor-constants: 1.57.73
-    stentor-guards: 1.57.73
+    stentor-constants: 1.57.78
+    stentor-guards: 1.57.78
   peerDependencies:
     stentor-models: 1.x
-  checksum: b3c524a3c5f4425869a1748df402cff0bc8be074f85a331350f8d2d0432cabf76ad15e741907b8b28bf1940eb25675ae36487845ccd3753e9c0bc23c73b1b3e8
+  checksum: 332a2adf927e2102b57b8b63332b7410b54fd8c42b015f19275f4faf7f6d04de41b9c262a2ab6183ec9ea497ada6823ea682fd32f153f3427c2ff6e04be4498e
   languageName: node
   linkType: hard
 
@@ -22454,15 +22454,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stentor-constants@npm:1.57.73":
-  version: 1.57.73
-  resolution: "stentor-constants@npm:1.57.73"
-  peerDependencies:
-    stentor-models: 1.x
-  checksum: c33a2ce5d9b1930b28730b4cd545aeee1ce07e9ad86e1a7f63699ccb8fffdda7fcac5682df0cb532de6d7003de3ca269350b30df6a1b37683f2b6b8bec5c1a13
-  languageName: node
-  linkType: hard
-
 "stentor-constants@npm:1.57.78":
   version: 1.57.78
   resolution: "stentor-constants@npm:1.57.78"
@@ -22504,17 +22495,6 @@ __metadata:
   peerDependencies:
     stentor-models: 1.x
   checksum: 29789ff1c7de70f926893090fc79ce89b99e09d6b970e9ee82a0a2709a349fba87151d99b6c558a3ed0dc27ecff2042ed966dd6d6ce5aa08cfe98b97cf814ab9
-  languageName: node
-  linkType: hard
-
-"stentor-guards@npm:1.57.73":
-  version: 1.57.73
-  resolution: "stentor-guards@npm:1.57.73"
-  dependencies:
-    stentor-constants: 1.57.73
-  peerDependencies:
-    stentor-models: 1.x
-  checksum: 407738d92288e6168125353ae357da37b9df5d31906325e66ba574902b79cb541cc20d6d5ddc1b437c636fe4330d75bcdad09edf9ea5245ff3d4e62c3c03ab45
   languageName: node
   linkType: hard
 
