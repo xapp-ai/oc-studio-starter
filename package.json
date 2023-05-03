@@ -28,5 +28,5 @@
     "deploy:prod": "lerna run deploy:prod",
     "release": "lerna version --yes && git push origin --tags && lerna publish from-git --yes"
   },
-  "packageManager": "yarn@3.5.0"
+  "packageManager": "yarn@3.5.1"
 }
