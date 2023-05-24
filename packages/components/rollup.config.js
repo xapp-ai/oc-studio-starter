@@ -31,7 +31,7 @@ function iife(fileName) {
     format: "iife",
     exports: "named",
     sourcemap: true,
-    name: "XAppChatIbxMiddleware",
+    name: "XAPPMiddleware",
     globals: {
       "@xapp/chat-widget": "XAppChatWidget",
       react: "XAppChatWidget.React",
@@ -42,7 +42,7 @@ function iife(fileName) {
 const config = [
   {
     input: "src/index.ts",
-    output: [iife(`build/ibx-widget-middleware.js`)],
+    output: [iife(`build/custom-middleware.js`)],
     plugins: plugins(),
   },
 ];
