@@ -6953,7 +6953,7 @@ __metadata:
     jest: 29.5.0
     nodemon: 2.0.22
     rimraf: 5.0.0
-    serverless: 3.30.1
+    serverless: 3.31.0
     serverless-plugin-common-excludes: 4.0.0
     sinon: 15.0.4
     sinon-chai: 3.7.0
@@ -8060,7 +8060,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:2.1386.0":
+"aws-sdk@npm:2.1386.0, aws-sdk@npm:^2.1379.0":
   version: 2.1386.0
   resolution: "aws-sdk@npm:2.1386.0"
   dependencies:
@@ -8075,24 +8075,6 @@ __metadata:
     uuid: 8.0.0
     xml2js: 0.5.0
   checksum: 426224ede6a39230dd8542ec8b25e4105db9e34424620cf11a9d61e1e52c18fd9ba248f6943633fdfb255a0bcd5d52844863b93306b16ae2c2a214c3bb17cca6
-  languageName: node
-  linkType: hard
-
-"aws-sdk@npm:^2.1352.0":
-  version: 2.1357.0
-  resolution: "aws-sdk@npm:2.1357.0"
-  dependencies:
-    buffer: 4.9.2
-    events: 1.1.1
-    ieee754: 1.1.13
-    jmespath: 0.16.0
-    querystring: 0.2.0
-    sax: 1.2.1
-    url: 0.10.3
-    util: ^0.12.4
-    uuid: 8.0.0
-    xml2js: 0.5.0
-  checksum: 89822a684f2a1669467955a2195ff48cbaa8e48b2b24a5e81ad46bb618aee0c8fa91e659ee0cd1e2f9aabb7c8eece910b290f6e1690101ac14496ab9116ebad1
   languageName: node
   linkType: hard
 
@@ -16828,10 +16810,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json-cycle@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "json-cycle@npm:1.4.0"
-  checksum: 3567c59d51eecf73b7de0c66d158cb28d120ebb29a61b6b377e4c76d27d35ce693574ec56f197e6f72e620d0dc1bf6f7e3d14d87631377966f456a560994da7b
+"json-cycle@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "json-cycle@npm:1.5.0"
+  checksum: 0a44cd349676c6726093c64283fb75402f9104b32325b06c9270af6d639e7caac419f5301a39298aef2ac1659b273b167e02bd622e628c3392cf86f0e77a9f78
   languageName: node
   linkType: hard
 
@@ -19084,7 +19066,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:2.6.11":
+"node-fetch@npm:2.6.11, node-fetch@npm:^2.6.11":
   version: 2.6.11
   resolution: "node-fetch@npm:2.6.11"
   dependencies:
@@ -23378,6 +23360,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"semver@npm:^7.5.1":
+  version: 7.5.1
+  resolution: "semver@npm:7.5.1"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: d16dbedad53c65b086f79524b9ef766bf38670b2395bdad5c957f824dcc566b624988013564f4812bcace3f9d405355c3635e2007396a39d1bffc71cfec4a2fc
+  languageName: node
+  linkType: hard
+
 "semver@npm:~7.0.0":
   version: 7.0.0
   resolution: "semver@npm:7.0.0"
@@ -23469,9 +23462,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serverless@npm:3.30.1":
-  version: 3.30.1
-  resolution: "serverless@npm:3.30.1"
+"serverless@npm:3.31.0":
+  version: 3.31.0
+  resolution: "serverless@npm:3.31.0"
   dependencies:
     "@serverless/dashboard-plugin": ^6.2.3
     "@serverless/platform-client": ^4.3.2
@@ -23479,7 +23472,7 @@ __metadata:
     ajv: ^8.12.0
     ajv-formats: ^2.1.1
     archiver: ^5.3.1
-    aws-sdk: ^2.1352.0
+    aws-sdk: ^2.1379.0
     bluebird: ^3.7.2
     cachedir: ^2.3.0
     chalk: ^4.1.2
@@ -23504,12 +23497,12 @@ __metadata:
     is-docker: ^2.2.1
     js-yaml: ^4.1.0
     json-colorizer: ^2.2.2
-    json-cycle: ^1.4.0
+    json-cycle: ^1.5.0
     json-refs: ^3.0.15
     lodash: ^4.17.21
     memoizee: ^0.4.15
     micromatch: ^4.0.5
-    node-fetch: ^2.6.9
+    node-fetch: ^2.6.11
     npm-registry-utilities: ^1.0.0
     object-hash: ^3.0.0
     open: ^8.4.2
@@ -23517,12 +23510,12 @@ __metadata:
     process-utils: ^4.0.0
     promise-queue: ^2.2.5
     require-from-string: ^2.0.2
-    semver: ^7.3.8
+    semver: ^7.5.1
     signal-exit: ^3.0.7
     stream-buffers: ^3.0.2
     strip-ansi: ^6.0.1
     supports-color: ^8.1.1
-    tar: ^6.1.13
+    tar: ^6.1.15
     timers-ext: ^0.1.7
     type: ^2.7.2
     untildify: ^4.0.0
@@ -23532,7 +23525,7 @@ __metadata:
   bin:
     serverless: bin/serverless.js
     sls: bin/serverless.js
-  checksum: cb8be3c14527d3278f691cbff8084b5d63ebd3967a999dde0242056a500dd562d23d3fdca7038417b10f0b2ae1715d2e0f34fad7b5ec45486edb83c82dec7719
+  checksum: 75ce2eb344b2b9725b48d14d947e21a903c7d723d187bad7de40faa9f25ae5724ed96c550c7b70a43d1bddacdb93e991c729d571b0fd151fbc2b3f873a63fdf1
   languageName: node
   linkType: hard
 
@@ -25181,6 +25174,20 @@ __metadata:
     mkdirp: ^1.0.3
     yallist: ^4.0.0
   checksum: 8a278bed123aa9f53549b256a36b719e317c8b96fe86a63406f3c62887f78267cea9b22dc6f7007009738509800d4a4dccc444abd71d762287c90f35b002eb1c
+  languageName: node
+  linkType: hard
+
+"tar@npm:^6.1.15":
+  version: 6.1.15
+  resolution: "tar@npm:6.1.15"
+  dependencies:
+    chownr: ^2.0.0
+    fs-minipass: ^2.0.0
+    minipass: ^5.0.0
+    minizlib: ^2.1.1
+    mkdirp: ^1.0.3
+    yallist: ^4.0.0
+  checksum: f23832fceeba7578bf31907aac744ae21e74a66f4a17a9e94507acf460e48f6db598c7023882db33bab75b80e027c21f276d405e4a0322d58f51c7088d428268
   languageName: node
   linkType: hard
 
