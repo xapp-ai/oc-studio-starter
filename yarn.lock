@@ -6992,7 +6992,7 @@ __metadata:
     jest: 29.5.0
     nodemon: 2.0.22
     rimraf: 5.0.1
-    serverless: 3.31.0
+    serverless: 3.32.2
     serverless-plugin-common-excludes: 4.0.0
     sinon: 15.1.2
     sinon-chai: 3.7.0
@@ -8106,7 +8106,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:2.1404.0":
+"aws-sdk@npm:2.1404.0, aws-sdk@npm:^2.1389.0":
   version: 2.1404.0
   resolution: "aws-sdk@npm:2.1404.0"
   dependencies:
@@ -8121,24 +8121,6 @@ __metadata:
     uuid: 8.0.0
     xml2js: 0.5.0
   checksum: 016aaccb31bfdcadf464f29376ce653d8bc1b5d54b12e5a8aa3079b966fd7d357b3c4d96084307971670686a1c9d185d7da1fefd7c0d9fc2077e0b7be4c75143
-  languageName: node
-  linkType: hard
-
-"aws-sdk@npm:^2.1379.0":
-  version: 2.1386.0
-  resolution: "aws-sdk@npm:2.1386.0"
-  dependencies:
-    buffer: 4.9.2
-    events: 1.1.1
-    ieee754: 1.1.13
-    jmespath: 0.16.0
-    querystring: 0.2.0
-    sax: 1.2.1
-    url: 0.10.3
-    util: ^0.12.4
-    uuid: 8.0.0
-    xml2js: 0.5.0
-  checksum: 426224ede6a39230dd8542ec8b25e4105db9e34424620cf11a9d61e1e52c18fd9ba248f6943633fdfb255a0bcd5d52844863b93306b16ae2c2a214c3bb17cca6
   languageName: node
   linkType: hard
 
@@ -11690,17 +11672,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:16.3.1":
+"dotenv@npm:16.3.1, dotenv@npm:^16.1.3":
   version: 16.3.1
   resolution: "dotenv@npm:16.3.1"
   checksum: 15d75e7279018f4bafd0ee9706593dd14455ddb71b3bcba9c52574460b7ccaf67d5cf8b2c08a5af1a9da6db36c956a04a1192b101ee102a3e0cf8817bbcf3dfd
-  languageName: node
-  linkType: hard
-
-"dotenv@npm:^16.0.3":
-  version: 16.0.3
-  resolution: "dotenv@npm:16.0.3"
-  checksum: afcf03f373d7a6d62c7e9afea6328e62851d627a4e73f2e12d0a8deae1cd375892004f3021883f8aec85932cd2834b091f568ced92b4774625b321db83b827f8
   languageName: node
   linkType: hard
 
@@ -23615,9 +23590,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serverless@npm:3.31.0":
-  version: 3.31.0
-  resolution: "serverless@npm:3.31.0"
+"serverless@npm:3.32.2":
+  version: 3.32.2
+  resolution: "serverless@npm:3.32.2"
   dependencies:
     "@serverless/dashboard-plugin": ^6.2.3
     "@serverless/platform-client": ^4.3.2
@@ -23625,7 +23600,7 @@ __metadata:
     ajv: ^8.12.0
     ajv-formats: ^2.1.1
     archiver: ^5.3.1
-    aws-sdk: ^2.1379.0
+    aws-sdk: ^2.1389.0
     bluebird: ^3.7.2
     cachedir: ^2.3.0
     chalk: ^4.1.2
@@ -23635,7 +23610,7 @@ __metadata:
     d: ^1.0.1
     dayjs: ^1.11.7
     decompress: ^4.2.1
-    dotenv: ^16.0.3
+    dotenv: ^16.1.3
     dotenv-expand: ^10.0.0
     essentials: ^1.2.0
     ext: ^1.7.0
@@ -23678,7 +23653,7 @@ __metadata:
   bin:
     serverless: bin/serverless.js
     sls: bin/serverless.js
-  checksum: 75ce2eb344b2b9725b48d14d947e21a903c7d723d187bad7de40faa9f25ae5724ed96c550c7b70a43d1bddacdb93e991c729d571b0fd151fbc2b3f873a63fdf1
+  checksum: 4c3ef3ad249c7b88c7da80c53a9e881a1511b3c6ac23669ec8cb4ac04e0c682fe4b7411d2b7f868cfb4213f6b8153536f2132775e9212f6233c2f03776e34641
   languageName: node
   linkType: hard
 
