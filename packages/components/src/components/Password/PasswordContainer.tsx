@@ -18,6 +18,7 @@ export const PasswordContainer: FC<PasswordContainerProps> = props => {
         const request: Partial<PasswordRequest> = {
             type: "OPTION_SELECT_REQUEST",
             intentId: "OptionSelect",
+
             password: pwd
         };
 

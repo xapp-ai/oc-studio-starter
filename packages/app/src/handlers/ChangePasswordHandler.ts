@@ -1,6 +1,7 @@
 /*! Copyright (c) 2022, XAPP AI */
 import { PasswordDisplay, PASSWORD_DISPLAY_TYPE } from "@xapp/oc-studio-starter-models";
 import { AbstractHandler, Context, keyFromRequest, Request } from "stentor";
+import { isPasswordRequest } from "../guards/isPasswordRequest";
 
 
 export class ChangePasswordHandler extends AbstractHandler {
@@ -9,7 +10,7 @@ export class ChangePasswordHandler extends AbstractHandler {
 
         const key = keyFromRequest(request);
 
-        const handled: string[] = ["HelpIntent"];
+        const handled: string[] = ["HelpIntent", "OptionSelect"];
 
         if (handled.includes(key)) {
             return true;
@@ -24,8 +25,16 @@ export class ChangePasswordHandler extends AbstractHandler {
         const key = keyFromRequest(request);
 
         switch (key) {
+            case "OptionSelect":
+                // Grab the password
+                if (isPasswordRequest(request)) {
+                    const newPassword = request.password;
+                    console.log(`Saving new password that starts with: ${newPassword.substring(0, 1)}`);
+                    // don't actually print out a password but save it somewhere
+                    context.response.say(`Thanks, we have updated your password.`);
+                }
+                return;
             case this.intentId:
-
                 const display: PasswordDisplay = {
                     type: PASSWORD_DISPLAY_TYPE
                 }
@@ -49,7 +58,4 @@ export class ChangePasswordHandler extends AbstractHandler {
         //    It is not recommended to remove this
         return super.handleRequest(request, context);
     }
-
-
-
 }
