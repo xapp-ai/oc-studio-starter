@@ -29,6 +29,7 @@ export class ChangePasswordHandler extends AbstractHandler {
                 // Grab the password
                 if (isPasswordRequest(request)) {
                     const newPassword = request.password;
+                    // eslint-disable-next-line no-console
                     console.log(`Saving new password that starts with: ${newPassword.substring(0, 1)}`);
                     // don't actually print out a password but save it somewhere
                     context.response.say(`Thanks, we have updated your password.`);
