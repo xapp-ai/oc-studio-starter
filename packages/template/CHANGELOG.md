@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/xapp-ai/oc-studio-starter/compare/v1.2.5...v1.3.0) (2024-01-23)
+
+
+### Features
+
+* Components with shared Models ([#1300](https://github.com/xapp-ai/oc-studio-starter/issues/1300)) ([06dee62](https://github.com/xapp-ai/oc-studio-starter/commit/06dee6206c5d5ce78b6190cc4ad1842f1969a872))
+* Google Business Messages ([#1519](https://github.com/xapp-ai/oc-studio-starter/issues/1519)) ([b71cccb](https://github.com/xapp-ai/oc-studio-starter/commit/b71cccbdf130763bc38a41080bf57deedaf4aa56))
+
+
+
+
+
 ## [1.2.5](https://github.com/xapp-ai/oc-studio-starter/compare/v1.2.4...v1.2.5) (2022-02-28)
 
 
