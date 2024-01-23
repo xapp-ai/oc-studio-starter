@@ -33,6 +33,6 @@ jobs:
       - run: yarn lint
       - run: yarn test
       - run: yarn build
-      - run: yarn logout
+      # - run: yarn logout
       - run: npm whoami
       - run: npx semantic-release
