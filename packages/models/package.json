@@ -5,6 +5,9 @@
   "license": "Apache-2.0",
   "types": "lib/index",
   "main": "lib/index",
+  "engines": {
+    "node": "^14 || ^16 || ^18 || ^20"
+  },
   "publishConfig": {
     "access": "restricted"
   },
@@ -13,8 +16,8 @@
     "@typescript-eslint/eslint-plugin": "5.61.0",
     "eslint": "8.43.0",
     "eslint-plugin-notice": "0.9.10",
-    "stentor-models": "1.58.64",
-    "typescript": "5.0.4"
+    "stentor-models": "1.58.87",
+    "typescript": "5.3.3"
   },
   "peerDependencies": {
     "stentor-models": "1.X"
